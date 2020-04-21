@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2f66778e34b5322"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		user="kirushakthy"
+		host="LAPTOP-I3SMJTM7"
+		rxversion="6.1.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="21/04/2020 16:20:36"
+		timestampiso="2020-04-21T15:20:36"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="1.3m"
+			durationms="80596"
+			type="test suite"
+			rid="2ac6085de9ea250"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			testsuitename="RxDatabaseTest"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="1">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="1.3m"
+				durationms="80563"
+				type="test case"
+				rid="238b717d4942d780"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="TestCase1"
+				testcaseid="eb4766bc-1586-4403-87ba-a1ef3baf550a"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="1.3m"
+					durationms="80532"
+					type="test module"
+					rid="1241a6be14339611"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="ValidatePage"
+					moduleid="6a157bd6-6567-47a9-8248-4a08244faf2d"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome' does not match the specified value (Failed to find item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome'. No element found for path '/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For the home']' within 1m.).
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.285"
+						timeRelativeToTestModuleStartTime="00:00.010"
+						timeWallClock="16:20:37"
+						time="00:00.285"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site 'https://www.virginmedia.com/' with browser 'IE' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.949"
+						timeRelativeToTestModuleStartTime="00:00.675"
+						timeWallClock="16:20:37"
+						time="00:00.949"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 5s.
+						</message>
+						<metainfo
+							itemindex="1"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="86"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:06.027"
+						timeRelativeToTestModuleStartTime="00:05.753"
+						timeWallClock="16:20:42"
+						time="00:06.027"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='My Virgin Media
+    ') on item 'VirginMediaOfficialSite.MyVirginMedia'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="89"
+							itemindex="2"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.465"
+						timeRelativeToTestModuleStartTime="00:11.191"
+						timeWallClock="16:20:48"
+						time="00:11.465"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="90"
+							loglvl="Success"
+							itemindex="2"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.853"
+						timeRelativeToTestModuleStartTime="00:11.579"
+						timeWallClock="16:20:48"
+						time="00:11.853"
+						level="Info"
+						category="User">
+						<message>
+							<a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_6ae7d38c\RxDataba_b235d1dc_rxlog.jpg"><img src="images_RxDataba_6ae7d38c\RxDataba_b235d1dc_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="3"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="93"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.857"
+						timeRelativeToTestModuleStartTime="00:11.583"
+						timeWallClock="16:20:48"
+						time="00:11.857"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'VirginMediaOfficialSite.MyVirginMedia' at 64;15.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="95"
+							itemindex="4"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.796"
+						timeRelativeToTestModuleStartTime="00:14.522"
+						timeWallClock="16:20:51"
+						time="00:14.796"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 5s.
+						</message>
+						<metainfo
+							itemindex="5"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="99"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.930"
+						timeRelativeToTestModuleStartTime="00:19.656"
+						timeWallClock="16:20:56"
+						time="00:19.930"
+						level="Info"
+						category="Validation"
+						errimg="images_RxDataba_6ae7d38c\RxDataba_6ae7d38c_a3d25089_trace.jpg"
+						errthumb="images_RxDataba_6ae7d38c\RxDataba_6ae7d38c_a3d25089_trace_thumb.jpg">
+						<message>
+							Validating AttributeEqual (InnerText='For the home
+') on item 'VirginMediaMyVirginMedia.ForTheHome'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For the home']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome"
+							id="b076ffca666142e8b2fe79474822fb77"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="102"
+							itemindex="6"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="01:20.554"
+						timeRelativeToTestModuleStartTime="01:20.280"
+						timeWallClock="16:21:57"
+						time="01:20.554"
+						level="Failure"
+						category="Validation"
+						errimg="images_RxDataba_6ae7d38c\RxDataba_6ae7d38c_205115f1_trace.jpg"
+						errthumb="images_RxDataba_6ae7d38c\RxDataba_6ae7d38c_205115f1_trace_thumb.jpg">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome' does not match the specified value (Failed to find item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome'. No element found for path '/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For the home']' within 1m.).
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For the home']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome"
+							id="b076ffca666142e8b2fe79474822fb77"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="103"
+							loglvl="Failure"
+							itemindex="6"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="01:20.606"
+						timeRelativeToTestModuleStartTime="01:20.332"
+						timeWallClock="16:21:57"
+						time="01:20.606"
+						level="Error"
+						category="Module"
+						errimg="images_RxDataba_6ae7d38c\RxDataba_6ae7d38c_d9c666a1_trace.jpg"
+						errthumb="images_RxDataba_6ae7d38c\RxDataba_6ae7d38c_d9c666a1_trace_thumb.jpg">
+						<message>
+							Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome' does not match the specified value (Failed to find item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome'. No element found for path '/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For the home']' within 1m.).
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Object value)
+   at RxDatabaseTest.ValidatePage.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs:line 103
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="103"
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For the home']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForTheHome"
+							id="b076ffca666142e8b2fe79474822fb77"
+							timeout="60000"
+							loglvl="Error"
+							itemindex="6"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

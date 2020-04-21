@@ -2,12 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 # Ranorex Studio 6.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxDatabaseTest", "RxDatabaseTest\RxDatabaseTest.csproj", "{97942AFB-EDBE-4980-80A6-55D74C583786}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76B8AFB0-8847-4110-BF9B-6E28D5897650}"
 	ProjectSection(SolutionItems) = postProject
 		Ranorex = .\Ranorex.rxsettings
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxDatabaseTest", "RxDatabaseTest\RxDatabaseTest.csproj", "{97942AFB-EDBE-4980-80A6-55D74C583786}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

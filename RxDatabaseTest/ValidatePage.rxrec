@@ -42,6 +42,13 @@ mode="Desktop">
 				https://www.virginmedia.com/
 			</url>
 		</openwebsiterecorditem>
+		<explicitdelayitem
+		enabled="True"
+		optional="False"
+		duration="10000ms">
+			<comment/>
+			<bindings/>
+		</explicitdelayitem>
 		<validationitem
 		enabled="True"
 		optional="False"
@@ -414,13 +421,6 @@ rUdFAgooooGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
    &#32;
 			</matchvalue>
 		</validationitem>
-		<explicitdelayitem
-		enabled="True"
-		optional="False"
-		duration="5000ms">
-			<comment/>
-			<bindings/>
-		</explicitdelayitem>
 		<loggingrecorditem
 		enabled="True"
 		optional="False"
@@ -793,6 +793,13 @@ dsEP+xgkV1NY/icj7DEvcy5/Q0COaooooKCiiigAooooAcpAzmnbh61HRQIKKKKBhRRRQAUUUUAF
 FFFABRRRQAVd0X/kM231b+RoooEzsKwfFX3bX6t/IUUUhGBRRRTKCiiigAooooAKKKKAP//Z
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		enabled="True"
+		optional="False"
+		duration="5000ms">
+			<comment/>
+			<bindings/>
+		</explicitdelayitem>
 		<validationitem
 		enabled="True"
 		optional="False"
@@ -1551,13 +1558,6 @@ A//Z
 				https://store.virginmedia.com/index.html
 			</matchvalue>
 		</validationitem>
-		<explicitdelayitem
-		enabled="True"
-		optional="False"
-		duration="5000ms">
-			<comment/>
-			<bindings/>
-		</explicitdelayitem>
 		<loggingrecorditem
 		enabled="True"
 		optional="False"
@@ -1978,7 +1978,7 @@ oooAKKKKACiiigAooooAKKKKAP/Z
 		<explicitdelayitem
 		enabled="True"
 		optional="False"
-		duration="5000ms">
+		duration="15000ms">
 			<comment/>
 			<bindings/>
 		</explicitdelayitem>

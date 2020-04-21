@@ -83,12 +83,12 @@ namespace RxDatabaseTest
             Host.Local.OpenBrowser("https://www.virginmedia.com/", "IE", "", false, false, false, false, false);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='My Virgin Media\n    ') on item 'VirginMediaOfficialSite.MyVirginMedia'.", repo.VirginMediaOfficialSite.MyVirginMediaInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
+            Delay.Duration(10000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='My Virgin Media\n    ') on item 'VirginMediaOfficialSite.MyVirginMedia'.", repo.VirginMediaOfficialSite.MyVirginMediaInfo, new RecordItemIndex(2));
             Validate.Attribute(repo.VirginMediaOfficialSite.MyVirginMediaInfo, "InnerText", "My Virgin Media\n    ");
             Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
-            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(3));
             
@@ -96,16 +96,16 @@ namespace RxDatabaseTest
             repo.VirginMediaOfficialSite.MyVirginMedia.Click("64;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(5));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(6));
             Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "InnerText", "For the home\n");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='https://store.virginmedia.com/index.html') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='https://store.virginmedia.com/index.html') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(7));
             Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "Href", "https://store.virginmedia.com/index.html");
             Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(7));
-            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(8));
             
@@ -113,8 +113,8 @@ namespace RxDatabaseTest
             repo.VirginMediaMyVirginMedia.ForBusiness.Click("64;20");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(10));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(10));
+            Delay.Duration(15000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(11));
             

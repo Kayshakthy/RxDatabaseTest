@@ -1,0 +1,15 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="RxDatabaseTest.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="RxDatabaseTest.rxtst" />
+    <Element value="ValidatePage.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+  </Properties>
+</Properties>
