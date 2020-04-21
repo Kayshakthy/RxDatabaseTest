@@ -3052,6 +3052,17 @@ J/rUlFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=
 			<comment/>
 			<bindings/>
 		</mousewheelitem>
+		<loggingrecorditem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d2b98863-33eb-43d7-84b3-a7132d07c83e"
+		action="Screenshot"
+		category="User"
+		message=""
+		reportlevel="Info;20">
+			<comment/>
+			<bindings/>
+		</loggingrecorditem>
 		<validationitem
 		enabled="True"
 		optional="False"
@@ -4161,6 +4172,26 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSN0oooABRRRQB//9k=
 Fibre Broadband
 			</matchvalue>
 		</validationitem>
+		<mousewheelitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		delta="720"
+		orientation="Vertical">
+			<comment/>
+			<bindings/>
+		</mousewheelitem>
+		<loggingrecorditem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d2b98863-33eb-43d7-84b3-a7132d07c83e"
+		action="Screenshot"
+		category="User"
+		message=""
+		reportlevel="Info;20">
+			<comment/>
+			<bindings/>
+		</loggingrecorditem>
 		<mouseitem
 		enabled="True"
 		optional="False"
