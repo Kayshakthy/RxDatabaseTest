@@ -1,0 +1,8 @@
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\bin\Debug\RxDatabaseTest.rxtmg
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\bin\Debug\RxDatabaseTest.rxtst
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\bin\Debug\RxDatabaseTest.exe.config
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\bin\Debug\RxDatabaseTest.exe
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\bin\Debug\RxDatabaseTest.pdb
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\obj\x86\Debug\RxDatabaseTest.csprojResolveAssemblyReference.cache
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\obj\x86\Debug\RxDatabaseTest.exe
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\obj\x86\Debug\RxDatabaseTest.pdb
