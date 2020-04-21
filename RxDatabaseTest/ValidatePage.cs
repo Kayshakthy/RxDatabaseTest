@@ -96,8 +96,8 @@ namespace RxDatabaseTest
             repo.VirginMediaOfficialSite.MyVirginMedia.Click("64;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(5));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(5));
+            Delay.Duration(10000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(6));
             Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "InnerText", "For the home\n");
