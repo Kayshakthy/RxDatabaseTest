@@ -30,6 +30,7 @@ namespace RxDatabaseTest
         RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteAppFolder _virginmediaofficialsite;
         RxDatabaseTestRepositoryFolders.VirginMediaMyVirginMediaAppFolder _virginmediamyvirginmedia;
         RxDatabaseTestRepositoryFolders.VirginMediaBusinessBusinessAndPubAppFolder _virginmediabusinessbusinessandpub;
+        RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder _virginmediaofficialsiteinternet;
 
         /// <summary>
         /// Gets the singleton class instance representing the RxDatabaseTestRepository element repository.
@@ -49,6 +50,7 @@ namespace RxDatabaseTest
             _virginmediaofficialsite = new RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteAppFolder(this);
             _virginmediamyvirginmedia = new RxDatabaseTestRepositoryFolders.VirginMediaMyVirginMediaAppFolder(this);
             _virginmediabusinessbusinessandpub = new RxDatabaseTestRepositoryFolders.VirginMediaBusinessBusinessAndPubAppFolder(this);
+            _virginmediaofficialsiteinternet = new RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder(this);
         }
 
 #region Variables
@@ -93,6 +95,15 @@ namespace RxDatabaseTest
         {
             get { return _virginmediabusinessbusinessandpub; }
         }
+
+        /// <summary>
+        /// The VirginMediaOfficialSiteInternet folder.
+        /// </summary>
+        [RepositoryFolder("64541cbd-0120-4185-8052-27ab8d8751d6")]
+        public virtual RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder VirginMediaOfficialSiteInternet
+        {
+            get { return _virginmediaofficialsiteinternet; }
+        }
     }
 
     /// <summary>
@@ -107,7 +118,10 @@ namespace RxDatabaseTest
         [RepositoryFolder("da0e99d9-f0ce-4ba9-ba9a-8c9792248f87")]
         public partial class VirginMediaOfficialSiteAppFolder : RepoGenBaseFolder
         {
+            RxDatabaseTestRepositoryFolders.ContainerFluidFolder _containerfluid;
             RepoItemInfo _myvirginmediaInfo;
+            RepoItemInfo _broadbandonlyInfo;
+            RepoItemInfo _m100fibrebroadbandInfo;
 
             /// <summary>
             /// Creates a new VirginMediaOfficialSite  folder.
@@ -115,7 +129,10 @@ namespace RxDatabaseTest
             public VirginMediaOfficialSiteAppFolder(RepoGenBaseFolder parentFolder) :
                     base("VirginMediaOfficialSite", "/dom[@domain='www.virginmedia.com']", parentFolder, 30000, null, false, "da0e99d9-f0ce-4ba9-ba9a-8c9792248f87", "")
             {
+                _containerfluid = new RxDatabaseTestRepositoryFolders.ContainerFluidFolder(this);
                 _myvirginmediaInfo = new RepoItemInfo(this, "MyVirginMedia", ".//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']", 30000, null, "142d9fa3-95fb-46ac-8c7e-b261e4938345");
+                _broadbandonlyInfo = new RepoItemInfo(this, "Broadbandonly", ".//div[#'df1263DesktopContainer']/div/div/div/div/div/div/div[4]/a[@href~'^https://www\\.virginmedia\\.c']/div[2]/p[@innertext='Broadbandonly']", 30000, null, "5efeafce-6d24-4a1a-ba27-102a4d0e45a9");
+                _m100fibrebroadbandInfo = new RepoItemInfo(this, "M100FibreBroadband", ".//div[#'mainPageContent']/section/div/div[13]/div/div/div[2]/div/div/div/div[2]/div/div/div[2]/?/?/h3[@innertext='M100Fibre Broadband']", 30000, null, "7ff7489d-762f-445a-98b0-56741a916eea");
             }
 
             /// <summary>
@@ -163,6 +180,242 @@ namespace RxDatabaseTest
                 get
                 {
                     return _myvirginmediaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Broadbandonly item.
+            /// </summary>
+            [RepositoryItem("5efeafce-6d24-4a1a-ba27-102a4d0e45a9")]
+            public virtual Ranorex.PTag Broadbandonly
+            {
+                get
+                {
+                    return _broadbandonlyInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Broadbandonly item info.
+            /// </summary>
+            [RepositoryItemInfo("5efeafce-6d24-4a1a-ba27-102a4d0e45a9")]
+            public virtual RepoItemInfo BroadbandonlyInfo
+            {
+                get
+                {
+                    return _broadbandonlyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The M100FibreBroadband item.
+            /// </summary>
+            [RepositoryItem("7ff7489d-762f-445a-98b0-56741a916eea")]
+            public virtual Ranorex.H3Tag M100FibreBroadband
+            {
+                get
+                {
+                    return _m100fibrebroadbandInfo.CreateAdapter<Ranorex.H3Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The M100FibreBroadband item info.
+            /// </summary>
+            [RepositoryItemInfo("7ff7489d-762f-445a-98b0-56741a916eea")]
+            public virtual RepoItemInfo M100FibreBroadbandInfo
+            {
+                get
+                {
+                    return _m100fibrebroadbandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContainerFluid folder.
+            /// </summary>
+            [RepositoryFolder("6449d789-f3cc-48fe-8a63-e8f5ba41a842")]
+            public virtual RxDatabaseTestRepositoryFolders.ContainerFluidFolder ContainerFluid
+            {
+                get { return _containerfluid; }
+            }
+        }
+
+        /// <summary>
+        /// The ContainerFluidFolder folder.
+        /// </summary>
+        [RepositoryFolder("6449d789-f3cc-48fe-8a63-e8f5ba41a842")]
+        public partial class ContainerFluidFolder : RepoGenBaseFolder
+        {
+            VirginMediaInfoClass _virginmediaInfo;
+            RepoItemInfo _findastoreInfo;
+            RepoItemInfo _expandingournetworkInfo;
+            RepoItemInfo _forbusinessInfo;
+
+            /// <summary>
+            /// Creates a new ContainerFluid  folder.
+            /// </summary>
+            public ContainerFluidFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContainerFluid", ".//div[#'unified-header']/div/div", parentFolder, 30000, null, false, "6449d789-f3cc-48fe-8a63-e8f5ba41a842", "")
+            {
+                _virginmediaInfo = new VirginMediaInfoClass(this);
+                _findastoreInfo = new RepoItemInfo(this, "FindAStore", "div[2]/div[1]/div[1]/ul/li[2]/a[@innertext='Find a store    ']", 30000, null, "a5750005-6ef7-4f3e-98c3-47ee3a2413ed");
+                _expandingournetworkInfo = new RepoItemInfo(this, "ExpandingOurNetwork", "div[2]/div[1]/div[3]/ul/li[3]/a[@innertext~'^Expanding\\ our\\ network\\ \\ \\ ']", 30000, null, "c0083344-eaba-4085-9513-9840c6dabf9e");
+                _forbusinessInfo = new RepoItemInfo(this, "ForBusiness", "div[2]/div[1]/div[3]/ul/li[5]/a[@innertext='For business    ']", 30000, null, "c4cbcd82-30c2-4271-8596-10fa591f4520");
+            }
+
+            /// <summary>
+            /// The VirginMediaInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("dd472150-7887-44de-b6ee-daa70cff6438")]
+            public class VirginMediaInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// VirginMediaInfoClass class constructor.
+                /// </summary>
+                public VirginMediaInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "VirginMedia", "div[1]/a[@href~'^https://www\\.virginmedia\\.c']/?/?/img[@alt='Virgin Media']", 30000, null, "dd472150-7887-44de-b6ee-daa70cff6438")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("cec3e525-d844-41ab-9c37-64b09f2bc060")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("cec3e525-d844-41ab-9c37-64b09f2bc060");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("cec3e525-d844-41ab-9c37-64b09f2bc060")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("cec3e525-d844-41ab-9c37-64b09f2bc060", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6449d789-f3cc-48fe-8a63-e8f5ba41a842")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6449d789-f3cc-48fe-8a63-e8f5ba41a842")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VirginMedia item.
+            /// </summary>
+            [RepositoryItem("dd472150-7887-44de-b6ee-daa70cff6438")]
+            public virtual Ranorex.ImgTag VirginMedia
+            {
+                get
+                {
+                    return _virginmediaInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VirginMedia item info.
+            /// </summary>
+            [RepositoryItemInfo("dd472150-7887-44de-b6ee-daa70cff6438")]
+            public virtual VirginMediaInfoClass VirginMediaInfo
+            {
+                get
+                {
+                    return _virginmediaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FindAStore item.
+            /// </summary>
+            [RepositoryItem("a5750005-6ef7-4f3e-98c3-47ee3a2413ed")]
+            public virtual Ranorex.ATag FindAStore
+            {
+                get
+                {
+                    return _findastoreInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FindAStore item info.
+            /// </summary>
+            [RepositoryItemInfo("a5750005-6ef7-4f3e-98c3-47ee3a2413ed")]
+            public virtual RepoItemInfo FindAStoreInfo
+            {
+                get
+                {
+                    return _findastoreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExpandingOurNetwork item.
+            /// </summary>
+            [RepositoryItem("c0083344-eaba-4085-9513-9840c6dabf9e")]
+            public virtual Ranorex.ATag ExpandingOurNetwork
+            {
+                get
+                {
+                    return _expandingournetworkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExpandingOurNetwork item info.
+            /// </summary>
+            [RepositoryItemInfo("c0083344-eaba-4085-9513-9840c6dabf9e")]
+            public virtual RepoItemInfo ExpandingOurNetworkInfo
+            {
+                get
+                {
+                    return _expandingournetworkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ForBusiness item.
+            /// </summary>
+            [RepositoryItem("c4cbcd82-30c2-4271-8596-10fa591f4520")]
+            public virtual Ranorex.ATag ForBusiness
+            {
+                get
+                {
+                    return _forbusinessInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ForBusiness item info.
+            /// </summary>
+            [RepositoryItemInfo("c4cbcd82-30c2-4271-8596-10fa591f4520")]
+            public virtual RepoItemInfo ForBusinessInfo
+            {
+                get
+                {
+                    return _forbusinessInfo;
                 }
             }
         }
@@ -445,6 +698,72 @@ namespace RxDatabaseTest
             /// The ClientCaption item info.
             /// </summary>
             [RepositoryItemInfo("4a1065aa-24c4-4e0e-a5b7-15cf55bf7b19")]
+            public virtual RepoItemInfo ClientCaptionInfo
+            {
+                get
+                {
+                    return _clientcaptionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The VirginMediaOfficialSiteInternetAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("64541cbd-0120-4185-8052-27ab8d8751d6")]
+        public partial class VirginMediaOfficialSiteInternetAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clientcaptionInfo;
+
+            /// <summary>
+            /// Creates a new VirginMediaOfficialSiteInternet  folder.
+            /// </summary>
+            public VirginMediaOfficialSiteInternetAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("VirginMediaOfficialSiteInternet", "/form[@title~'^Virgin\\ Media\\ -\\ Official\\ S']", parentFolder, 30000, null, true, "64541cbd-0120-4185-8052-27ab8d8751d6", "")
+            {
+                _clientcaptionInfo = new RepoItemInfo(this, "ClientCaption", "element[@class='Client Caption']", 30000, null, "5a6d3c5d-1af1-4a78-95a9-4ba6807977ff");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("64541cbd-0120-4185-8052-27ab8d8751d6")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("64541cbd-0120-4185-8052-27ab8d8751d6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item.
+            /// </summary>
+            [RepositoryItem("5a6d3c5d-1af1-4a78-95a9-4ba6807977ff")]
+            public virtual Ranorex.Unknown ClientCaption
+            {
+                get
+                {
+                    return _clientcaptionInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item info.
+            /// </summary>
+            [RepositoryItemInfo("5a6d3c5d-1af1-4a78-95a9-4ba6807977ff")]
             public virtual RepoItemInfo ClientCaptionInfo
             {
                 get

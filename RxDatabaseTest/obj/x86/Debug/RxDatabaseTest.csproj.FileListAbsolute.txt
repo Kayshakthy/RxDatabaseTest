@@ -6,3 +6,4 @@ C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxD
 C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\obj\x86\Debug\RxDatabaseTest.csprojResolveAssemblyReference.cache
 C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\obj\x86\Debug\RxDatabaseTest.exe
 C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\obj\x86\Debug\RxDatabaseTest.pdb
+C:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\bin\Debug\RepositoryImages\RxDatabaseTestRepository558d6956.rximgres
