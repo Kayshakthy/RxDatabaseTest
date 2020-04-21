@@ -98,21 +98,21 @@ namespace RxDatabaseTest
             Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.ForBusinessInfo, "InnerText", "For business\n    ");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Alt='Virgin Media') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(5));
-            Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, "Alt", "Virgin Media");
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Alt='Virgin Media') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(5));
+            //Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, "Alt", "Virgin Media");
+            //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(6));
-            Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, "Src", "https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png");
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(6));
+            //Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, "Src", "https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png");
+            //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=133,Height=82}) on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(7));
-            Validate.ContainsImage(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, VirginMedia_Screenshot1, VirginMedia_Screenshot1_Options);
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=133,Height=82}) on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(7));
+            //Validate.ContainsImage(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, VirginMedia_Screenshot1, VirginMedia_Screenshot1_Options);
+            //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Find a store\n    ') on item 'VirginMediaOfficialSite.ContainerFluid.FindAStore'.", repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, new RecordItemIndex(8));
-            Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, "InnerText", "Find a store\n    ");
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Find a store\n    ') on item 'VirginMediaOfficialSite.ContainerFluid.FindAStore'.", repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, new RecordItemIndex(8));
+            //Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, "InnerText", "Find a store\n    ");
+            //Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(9));
             
