@@ -96,8 +96,8 @@ namespace RxDatabaseTest
             repo.VirginMediaOfficialSite.MyVirginMedia.Click("64;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(5));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(5));
+            Delay.Duration(30000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Help') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, new RecordItemIndex(6));
             Validate.Attribute(repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, "InnerText", "Help");
@@ -121,8 +121,8 @@ namespace RxDatabaseTest
             repo.VirginMediaMyVirginMedia.ForBusiness.Click("64;20");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(12));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(12));
+            Delay.Duration(15000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(13));
             

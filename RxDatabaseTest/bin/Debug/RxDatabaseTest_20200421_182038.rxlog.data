@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="276ae8eb3085c57b"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="kirushakthy"
+		host="LAPTOP-I3SMJTM7"
+		rxversion="6.1.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="21/04/2020 18:20:38"
+		timestampiso="2020-04-21T17:20:38"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="1.1m"
+			durationms="68921"
+			type="test suite"
+			rid="17b8fcffe32becb8"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testsuitename="RxDatabaseTest"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="1">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Success"
+				duration="1.1m"
+				durationms="68879"
+				type="test case"
+				rid="371ee6c98d132c"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				testcasename="TestCase1"
+				testcaseid="eb4766bc-1586-4403-87ba-a1ef3baf550a"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="1.1m"
+					durationms="68784"
+					type="test module"
+					rid="39602535dd5419d4"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="ValidatePage"
+					moduleid="6a157bd6-6567-47a9-8248-4a08244faf2d"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.303"
+						timeRelativeToTestModuleStartTime="00:00.017"
+						timeWallClock="18:20:38"
+						time="00:00.303"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site 'https://www.virginmedia.com/' with browser 'IE' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.980"
+						timeRelativeToTestModuleStartTime="00:00.695"
+						timeWallClock="18:20:39"
+						time="00:00.980"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 10s.
+						</message>
+						<metainfo
+							itemindex="1"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="86"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.049"
+						timeRelativeToTestModuleStartTime="00:10.764"
+						timeWallClock="18:20:49"
+						time="00:11.049"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='My Virgin Media
+    ') on item 'VirginMediaOfficialSite.MyVirginMedia'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="89"
+							itemindex="2"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.423"
+						timeRelativeToTestModuleStartTime="00:15.138"
+						timeWallClock="18:20:53"
+						time="00:15.423"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="90"
+							loglvl="Success"
+							itemindex="2"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.700"
+						timeRelativeToTestModuleStartTime="00:15.414"
+						timeWallClock="18:20:53"
+						time="00:15.700"
+						level="Info"
+						category="User">
+						<message>
+							<a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_6aabd38c\RxDataba_b1f9d1dc_rxlog.jpg"><img src="images_RxDataba_6aabd38c\RxDataba_b1f9d1dc_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="3"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="93"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.702"
+						timeRelativeToTestModuleStartTime="00:15.417"
+						timeWallClock="18:20:53"
+						time="00:15.702"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'VirginMediaOfficialSite.MyVirginMedia' at 64;15.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="95"
+							itemindex="4"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.826"
+						timeRelativeToTestModuleStartTime="00:17.541"
+						timeWallClock="18:20:55"
+						time="00:17.826"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 30s.
+						</message>
+						<metainfo
+							itemindex="5"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="99"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:47.928"
+						timeRelativeToTestModuleStartTime="00:47.643"
+						timeWallClock="18:21:26"
+						time="00:47.928"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Help') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[3]//strong[@innertext='Help']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help"
+							id="9ce99acefcbc4d93a9b2edda074e75d7"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="102"
+							itemindex="6"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:48.697"
+						timeRelativeToTestModuleStartTime="00:48.412"
+						timeWallClock="18:21:26"
+						time="00:48.697"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[3]//strong[@innertext='Help']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help"
+							id="9ce99acefcbc4d93a9b2edda074e75d7"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="103"
+							loglvl="Success"
+							itemindex="6"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:48.867"
+						timeRelativeToTestModuleStartTime="00:48.582"
+						timeWallClock="18:21:26"
+						time="00:48.867"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Expanding our network
+') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='Expanding our network']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork"
+							id="d3fdf01c3ac24a8aae8bd0a770a41d32"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="106"
+							itemindex="7"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:49.696"
+						timeRelativeToTestModuleStartTime="00:49.410"
+						timeWallClock="18:21:27"
+						time="00:49.696"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='Expanding our network']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork"
+							id="d3fdf01c3ac24a8aae8bd0a770a41d32"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="107"
+							loglvl="Success"
+							itemindex="7"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:49.963"
+						timeRelativeToTestModuleStartTime="00:49.678"
+						timeWallClock="18:21:28"
+						time="00:49.963"
+						level="Info"
+						category="User">
+						<message>
+							<a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_6aabd38c\RxDataba_3d5ed1dc_rxlog.jpg"><img src="images_RxDataba_6aabd38c\RxDataba_3d5ed1dc_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="10"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="118"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:49.966"
+						timeRelativeToTestModuleStartTime="00:49.681"
+						timeWallClock="18:21:28"
+						time="00:49.966"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'VirginMediaMyVirginMedia.ForBusiness' at 64;20.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For business']"
+							fullname="RxDatabaseTestRepository.VirginMediaMyVirginMedia.ForBusiness"
+							id="fff7c40c2e4a439cb825686a2bd89b1b"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="120"
+							itemindex="11"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:51.917"
+						timeRelativeToTestModuleStartTime="00:51.631"
+						timeWallClock="18:21:30"
+						time="00:51.917"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 15s.
+						</message>
+						<metainfo
+							itemindex="12"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="124"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="01:07.130"
+						timeRelativeToTestModuleStartTime="01:06.845"
+						timeWallClock="18:21:45"
+						time="01:07.130"
+						level="Info"
+						category="User">
+						<message>
+							<a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_6aabd38c\RxDataba_9b2fd1dc_rxlog.jpg"><img src="images_RxDataba_6aabd38c\RxDataba_9b2fd1dc_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="13"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="127"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="01:07.134"
+						timeRelativeToTestModuleStartTime="01:06.849"
+						timeWallClock="18:21:45"
+						time="01:07.134"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'VirginMediaBusinessBusinessAndPub.ClientCaption' at 1881;24.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title~'^Virgin\ Media\ Business\ \|\ B']/element[@class='Client Caption']"
+							fullname="RxDatabaseTestRepository.VirginMediaBusinessBusinessAndPub.ClientCaption"
+							id="4a1065aa24c44e0ea5b715cf55bf7b19"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="129"
+							itemindex="14"
+							loglvl="Info"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

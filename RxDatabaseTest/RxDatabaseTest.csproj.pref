@@ -1,4 +1,7 @@
 ﻿<Properties>
+  <Array name="active">
+    <Element value="ValidatePage.rxrec" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="RxDatabaseTest.rxtst" />

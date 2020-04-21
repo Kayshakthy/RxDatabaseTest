@@ -796,7 +796,7 @@ FFFABRRRQAVd0X/kM231b+RoooEzsKwfFX3bX6t/IUUUhGBRRRTKCiiigAooooAKKKKAP//Z
 		<explicitdelayitem
 		enabled="True"
 		optional="False"
-		duration="10000ms">
+		duration="30000ms">
 			<comment/>
 			<bindings/>
 		</explicitdelayitem>
@@ -2737,7 +2737,7 @@ oooAKKKKACiiigAooooAKKKKAP/Z
 		<explicitdelayitem
 		enabled="True"
 		optional="False"
-		duration="10000ms">
+		duration="15000ms">
 			<comment/>
 			<bindings/>
 		</explicitdelayitem>
