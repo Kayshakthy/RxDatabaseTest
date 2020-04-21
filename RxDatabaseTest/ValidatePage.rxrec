@@ -1628,7 +1628,7 @@ Jqn/ACGU/wCvZ/5PWhpX/IOi/H+ZoooAbB/yGbr/AK5R/wA2rJ1b/kJS/h/IUUVlV+FGtL4mf//Z
 			<bindings/>
 		</loggingrecorditem>
 		<mouseitem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		duration="500ms"
 		searchpropertyid="0aac9f8f-ec20-46f9-9efa-0c0d076b6b68"
@@ -1839,6 +1839,22 @@ UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHVWv/HpB/wBck/8AQRUtRWv/AB6Qf9ck/wDQ
 RUtIkkh++fpRRD98/SigD//Z
 			</helperscreenshot>
 		</mouseitem>
+		<closeapprecorditem
+		enabled="True"
+		optional="False"
+		searchpropertyid="f04a60dc-0eeb-47a1-a467-4cb427dabf92"
+		method="KillProcess"
+		graceperiod="0ms">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="ItemRecorderEditor"
+			id="5a6d3c5d-1af1-4a78-95a9-4ba6807977ff">
+				<path>
+					/form[@title~'^Virgin\ Media\ -\ Official\ S']/element[@class='Client Caption']
+				</path>
+			</info>
+		</closeapprecorditem>
 		<validationitem
 		enabled="False"
 		optional="False"

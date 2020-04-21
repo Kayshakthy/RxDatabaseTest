@@ -104,87 +104,91 @@ namespace RxDatabaseTest
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1892;27.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(7));
-            repo.VirginMediaOfficialSiteInternet.ClientCaption.Click("1892;27");
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1892;27.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(7));
+            //repo.VirginMediaOfficialSiteInternet.ClientCaption.Click("1892;27");
+            //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Alt='Virgin Media') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'VirginMediaOfficialSiteInternet.ClientCaption'.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(8));
+            Host.Local.KillApplication(repo.VirginMediaOfficialSiteInternet.ClientCaption);
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Alt='Virgin Media') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(9));
             //Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, "Alt", "Virgin Media");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png') on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(10));
             //Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, "Src", "https://www.virginmedia.com/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=133,Height=82}) on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=133,Height=82}) on item 'VirginMediaOfficialSite.ContainerFluid.VirginMedia'.", repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, new RecordItemIndex(11));
             //Validate.ContainsImage(repo.VirginMediaOfficialSite.ContainerFluid.VirginMediaInfo, VirginMedia_Screenshot1, VirginMedia_Screenshot1_Options);
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Find a store\n    ') on item 'VirginMediaOfficialSite.ContainerFluid.FindAStore'.", repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Find a store\n    ') on item 'VirginMediaOfficialSite.ContainerFluid.FindAStore'.", repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, new RecordItemIndex(12));
             //Validate.Attribute(repo.VirginMediaOfficialSite.ContainerFluid.FindAStoreInfo, "InnerText", "Find a store\n    ");
             //Delay.Milliseconds(100);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(12));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(13));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Scroll Vertical by -720 units.", new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Scroll Vertical by -720 units.", new RecordItemIndex(14));
             //Mouse.ScrollWheel(-720);
             //Delay.Milliseconds(500);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(14));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(15));
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Broadbandonly') on item 'VirginMediaOfficialSite.Broadbandonly'.", repo.VirginMediaOfficialSite.BroadbandonlyInfo, new RecordItemIndex(15));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Broadbandonly') on item 'VirginMediaOfficialSite.Broadbandonly'.", repo.VirginMediaOfficialSite.BroadbandonlyInfo, new RecordItemIndex(16));
             //Validate.Attribute(repo.VirginMediaOfficialSite.BroadbandonlyInfo, "InnerText", "Broadbandonly");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='M100\nFibre Broadband') on item 'VirginMediaOfficialSite.M100FibreBroadband'.", repo.VirginMediaOfficialSite.M100FibreBroadbandInfo, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='M100\nFibre Broadband') on item 'VirginMediaOfficialSite.M100FibreBroadband'.", repo.VirginMediaOfficialSite.M100FibreBroadbandInfo, new RecordItemIndex(17));
             //Validate.Attribute(repo.VirginMediaOfficialSite.M100FibreBroadbandInfo, "InnerText", "M100\nFibre Broadband");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Scroll Vertical by 720 units.", new RecordItemIndex(17));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Scroll Vertical by 720 units.", new RecordItemIndex(18));
             //Mouse.ScrollWheel(720);
             //Delay.Milliseconds(500);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(18));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(19));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1890;28.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(19));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1890;28.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(20));
             //repo.VirginMediaOfficialSiteInternet.ClientCaption.Click("1890;28");
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSite.MyVirginMedia' at 64;15.", repo.VirginMediaOfficialSite.MyVirginMediaInfo, new RecordItemIndex(20));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSite.MyVirginMedia' at 64;15.", repo.VirginMediaOfficialSite.MyVirginMediaInfo, new RecordItemIndex(21));
             //repo.VirginMediaOfficialSite.MyVirginMedia.Click("64;15");
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(21));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(22));
             //Delay.Duration(30000, false);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Help') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, new RecordItemIndex(22));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Help') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, new RecordItemIndex(23));
             //Validate.Attribute(repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, "InnerText", "Help");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Expanding our network\n') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetworkInfo, new RecordItemIndex(23));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Expanding our network\n') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetworkInfo, new RecordItemIndex(24));
             //Validate.Attribute(repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetworkInfo, "InnerText", "Expanding our network\n");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(24));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(25));
             //Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "InnerText", "For the home\n");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='https://store.virginmedia.com/index.html') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(25));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='https://store.virginmedia.com/index.html') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(26));
             //Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "Href", "https://store.virginmedia.com/index.html");
             //Delay.Milliseconds(100);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(26));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(27));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaMyVirginMedia.ForBusiness' at 64;20.", repo.VirginMediaMyVirginMedia.ForBusinessInfo, new RecordItemIndex(27));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaMyVirginMedia.ForBusiness' at 64;20.", repo.VirginMediaMyVirginMedia.ForBusinessInfo, new RecordItemIndex(28));
             //repo.VirginMediaMyVirginMedia.ForBusiness.Click("64;20");
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(28));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(29));
             //Delay.Duration(15000, false);
             
-            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(29));
+            //Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(30));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaBusinessBusinessAndPub.ClientCaption' at 1881;24.", repo.VirginMediaBusinessBusinessAndPub.ClientCaptionInfo, new RecordItemIndex(30));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaBusinessBusinessAndPub.ClientCaption' at 1881;24.", repo.VirginMediaBusinessBusinessAndPub.ClientCaptionInfo, new RecordItemIndex(31));
             //repo.VirginMediaBusinessBusinessAndPub.ClientCaption.Click("1881;24");
             //Delay.Milliseconds(200);
             
