@@ -228,6 +228,16 @@ d6CGaNVwcgReF9IW/NmwtX3zsOvb/wdZ2MdPERbt3gAAAABJRU5ErkJggg==
 				refimgid="c01f63d4-6aea-4286-be42-ea569fbbb6f9">
 					/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[5]/a[@innertext='For business    ']
 				</item>
+				<item
+				name="Help"
+				id="729e15b1-2fc9-42c9-996e-6e5e72617efa"
+				searchtimeout="30000ms"
+				capname="atag"
+				refpath="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[4]/a[@innertext='Help    ']"
+				addcaps="unknown,webelement,atag"
+				refimgid="976eadbc-e722-46be-937a-1d67519be0aa">
+					/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[4]/a[@innertext='Help    ']
+				</item>
 				<basepath>
 					/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div
 				</basepath>

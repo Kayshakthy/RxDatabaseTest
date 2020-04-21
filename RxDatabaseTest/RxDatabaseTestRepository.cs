@@ -251,6 +251,7 @@ namespace RxDatabaseTest
             RepoItemInfo _findastoreInfo;
             RepoItemInfo _expandingournetworkInfo;
             RepoItemInfo _forbusinessInfo;
+            RepoItemInfo _helpInfo;
 
             /// <summary>
             /// Creates a new ContainerFluid  folder.
@@ -262,6 +263,7 @@ namespace RxDatabaseTest
                 _findastoreInfo = new RepoItemInfo(this, "FindAStore", "div[2]/div[1]/div[1]/ul/li[2]/a[@innertext='Find a store    ']", 30000, null, "a5750005-6ef7-4f3e-98c3-47ee3a2413ed");
                 _expandingournetworkInfo = new RepoItemInfo(this, "ExpandingOurNetwork", "div[2]/div[1]/div[3]/ul/li[3]/a[@innertext~'^Expanding\\ our\\ network\\ \\ \\ ']", 30000, null, "c0083344-eaba-4085-9513-9840c6dabf9e");
                 _forbusinessInfo = new RepoItemInfo(this, "ForBusiness", "div[2]/div[1]/div[3]/ul/li[5]/a[@innertext='For business    ']", 30000, null, "c4cbcd82-30c2-4271-8596-10fa591f4520");
+                _helpInfo = new RepoItemInfo(this, "Help", "div[2]/div[1]/div[3]/ul/li[4]/a[@innertext='Help    ']", 30000, null, "729e15b1-2fc9-42c9-996e-6e5e72617efa");
             }
 
             /// <summary>
@@ -416,6 +418,30 @@ namespace RxDatabaseTest
                 get
                 {
                     return _forbusinessInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Help item.
+            /// </summary>
+            [RepositoryItem("729e15b1-2fc9-42c9-996e-6e5e72617efa")]
+            public virtual Ranorex.ATag Help
+            {
+                get
+                {
+                    return _helpInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Help item info.
+            /// </summary>
+            [RepositoryItemInfo("729e15b1-2fc9-42c9-996e-6e5e72617efa")]
+            public virtual RepoItemInfo HelpInfo
+            {
+                get
+                {
+                    return _helpInfo;
                 }
             }
         }
