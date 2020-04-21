@@ -79,6 +79,49 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refimgid="deba4e81-17dd-4e8f-89a5-57eec48cc990">
 				/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='For business']
 			</item>
+			<folder
+			name="UnifiedHeaderLevelOne"
+			id="60bd31ca-9569-4d46-aab9-ad24e2b89ac7"
+			searchtimeout="30000ms"
+			capname="divtag"
+			refpath="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']"
+			addcaps="unknown,webelement,divtag"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="ExpandingOurNetwork"
+				id="d3fdf01c-3ac2-4a8a-ae8b-d0a770a41d32"
+				searchtimeout="30000ms"
+				capname="atag"
+				refpath="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[1]/li[3]/a[@innertext='Expanding our network']"
+				addcaps="unknown,webelement,atag"
+				refimgid="6b027eaf-8bdf-47b8-a9fb-6fa66ce884a4">
+					/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']//a[@innertext='Expanding our network']
+				</item>
+				<item
+				name="Help"
+				id="9ce99ace-fcbc-4d93-a9b2-edda074e75d7"
+				searchtimeout="30000ms"
+				capname="strongtag"
+				refpath="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[3]/li[6]/a[@href='https://www.virginmedia.com/help']/strong[@innertext='Help']"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="82aab150-778d-4bfa-8b88-583eb1ca77ff">
+					/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[3]//strong[@innertext='Help']
+				</item>
+				<item
+				name="MyProfile"
+				id="f84e8a6e-dc2b-403f-8d32-be8242fd0206"
+				searchtimeout="30000ms"
+				capname="strongtag"
+				refpath="/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[3]/li[2]/a[@href='https://my.virginmedia.com/my-profile/view']/strong[@innertext='My profile']"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="71dbbaaa-e1bf-40af-b126-fe94b7347c2d">
+					/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']/ul[3]//strong[@innertext='My profile']
+				</item>
+				<basepath>
+					/dom[@domain='my.virginmedia.com']//div[#'unified-header-level-one']
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='my.virginmedia.com']
 			</basepath>

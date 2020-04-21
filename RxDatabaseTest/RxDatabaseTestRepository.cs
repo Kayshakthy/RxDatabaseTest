@@ -173,6 +173,7 @@ namespace RxDatabaseTest
         [RepositoryFolder("2d3ecc95-4379-4ad1-9cd7-1ee55a5a99b1")]
         public partial class VirginMediaMyVirginMediaAppFolder : RepoGenBaseFolder
         {
+            RxDatabaseTestRepositoryFolders.UnifiedHeaderLevelOneFolder _unifiedheaderlevelone;
             RepoItemInfo _forthehomeInfo;
             RepoItemInfo _forbusinessInfo;
 
@@ -182,6 +183,7 @@ namespace RxDatabaseTest
             public VirginMediaMyVirginMediaAppFolder(RepoGenBaseFolder parentFolder) :
                     base("VirginMediaMyVirginMedia", "/dom[@domain='my.virginmedia.com']", parentFolder, 30000, null, false, "2d3ecc95-4379-4ad1-9cd7-1ee55a5a99b1", "")
             {
+                _unifiedheaderlevelone = new RxDatabaseTestRepositoryFolders.UnifiedHeaderLevelOneFolder(this);
                 _forthehomeInfo = new RepoItemInfo(this, "ForTheHome", ".//div[#'unified-header-level-one']//a[@innertext='For the home']", 30000, null, "b076ffca-6661-42e8-b2fe-79474822fb77");
                 _forbusinessInfo = new RepoItemInfo(this, "ForBusiness", ".//div[#'unified-header-level-one']//a[@innertext='For business']", 30000, null, "fff7c40c-2e4a-439c-b825-686a2bd89b1b");
             }
@@ -255,6 +257,133 @@ namespace RxDatabaseTest
                 get
                 {
                     return _forbusinessInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UnifiedHeaderLevelOne folder.
+            /// </summary>
+            [RepositoryFolder("60bd31ca-9569-4d46-aab9-ad24e2b89ac7")]
+            public virtual RxDatabaseTestRepositoryFolders.UnifiedHeaderLevelOneFolder UnifiedHeaderLevelOne
+            {
+                get { return _unifiedheaderlevelone; }
+            }
+        }
+
+        /// <summary>
+        /// The UnifiedHeaderLevelOneFolder folder.
+        /// </summary>
+        [RepositoryFolder("60bd31ca-9569-4d46-aab9-ad24e2b89ac7")]
+        public partial class UnifiedHeaderLevelOneFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _expandingournetworkInfo;
+            RepoItemInfo _helpInfo;
+            RepoItemInfo _myprofileInfo;
+
+            /// <summary>
+            /// Creates a new UnifiedHeaderLevelOne  folder.
+            /// </summary>
+            public UnifiedHeaderLevelOneFolder(RepoGenBaseFolder parentFolder) :
+                    base("UnifiedHeaderLevelOne", ".//div[#'unified-header-level-one']", parentFolder, 30000, null, false, "60bd31ca-9569-4d46-aab9-ad24e2b89ac7", "")
+            {
+                _expandingournetworkInfo = new RepoItemInfo(this, "ExpandingOurNetwork", ".//a[@innertext='Expanding our network']", 30000, null, "d3fdf01c-3ac2-4a8a-ae8b-d0a770a41d32");
+                _helpInfo = new RepoItemInfo(this, "Help", "ul[3]//strong[@innertext='Help']", 30000, null, "9ce99ace-fcbc-4d93-a9b2-edda074e75d7");
+                _myprofileInfo = new RepoItemInfo(this, "MyProfile", "ul[3]//strong[@innertext='My profile']", 30000, null, "f84e8a6e-dc2b-403f-8d32-be8242fd0206");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("60bd31ca-9569-4d46-aab9-ad24e2b89ac7")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("60bd31ca-9569-4d46-aab9-ad24e2b89ac7")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExpandingOurNetwork item.
+            /// </summary>
+            [RepositoryItem("d3fdf01c-3ac2-4a8a-ae8b-d0a770a41d32")]
+            public virtual Ranorex.ATag ExpandingOurNetwork
+            {
+                get
+                {
+                    return _expandingournetworkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExpandingOurNetwork item info.
+            /// </summary>
+            [RepositoryItemInfo("d3fdf01c-3ac2-4a8a-ae8b-d0a770a41d32")]
+            public virtual RepoItemInfo ExpandingOurNetworkInfo
+            {
+                get
+                {
+                    return _expandingournetworkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Help item.
+            /// </summary>
+            [RepositoryItem("9ce99ace-fcbc-4d93-a9b2-edda074e75d7")]
+            public virtual Ranorex.StrongTag Help
+            {
+                get
+                {
+                    return _helpInfo.CreateAdapter<Ranorex.StrongTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Help item info.
+            /// </summary>
+            [RepositoryItemInfo("9ce99ace-fcbc-4d93-a9b2-edda074e75d7")]
+            public virtual RepoItemInfo HelpInfo
+            {
+                get
+                {
+                    return _helpInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyProfile item.
+            /// </summary>
+            [RepositoryItem("f84e8a6e-dc2b-403f-8d32-be8242fd0206")]
+            public virtual Ranorex.StrongTag MyProfile
+            {
+                get
+                {
+                    return _myprofileInfo.CreateAdapter<Ranorex.StrongTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyProfile item info.
+            /// </summary>
+            [RepositoryItemInfo("f84e8a6e-dc2b-403f-8d32-be8242fd0206")]
+            public virtual RepoItemInfo MyProfileInfo
+            {
+                get
+                {
+                    return _myprofileInfo;
                 }
             }
         }

@@ -99,26 +99,34 @@ namespace RxDatabaseTest
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(5));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(6));
-            Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "InnerText", "For the home\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Help') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.Help'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, new RecordItemIndex(6));
+            Validate.Attribute(repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.HelpInfo, "InnerText", "Help");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='https://store.virginmedia.com/index.html') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(7));
-            Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "Href", "https://store.virginmedia.com/index.html");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Expanding our network\n') on item 'VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetwork'.", repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetworkInfo, new RecordItemIndex(7));
+            Validate.Attribute(repo.VirginMediaMyVirginMedia.UnifiedHeaderLevelOne.ExpandingOurNetworkInfo, "InnerText", "Expanding our network\n");
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(8));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='For the home\n') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(8));
+            //Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "InnerText", "For the home\n");
+            //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaMyVirginMedia.ForBusiness' at 64;20.", repo.VirginMediaMyVirginMedia.ForBusinessInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Href='https://store.virginmedia.com/index.html') on item 'VirginMediaMyVirginMedia.ForTheHome'.", repo.VirginMediaMyVirginMedia.ForTheHomeInfo, new RecordItemIndex(9));
+            //Validate.Attribute(repo.VirginMediaMyVirginMedia.ForTheHomeInfo, "Href", "https://store.virginmedia.com/index.html");
+            //Delay.Milliseconds(100);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(10));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaMyVirginMedia.ForBusiness' at 64;20.", repo.VirginMediaMyVirginMedia.ForBusinessInfo, new RecordItemIndex(11));
             repo.VirginMediaMyVirginMedia.ForBusiness.Click("64;20");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(10));
-            Delay.Duration(15000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(12));
+            Delay.Duration(10000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(11));
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(13));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaBusinessBusinessAndPub.ClientCaption' at 1881;24.", repo.VirginMediaBusinessBusinessAndPub.ClientCaptionInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaBusinessBusinessAndPub.ClientCaption' at 1881;24.", repo.VirginMediaBusinessBusinessAndPub.ClientCaptionInfo, new RecordItemIndex(14));
             repo.VirginMediaBusinessBusinessAndPub.ClientCaption.Click("1881;24");
             Delay.Milliseconds(200);
             
