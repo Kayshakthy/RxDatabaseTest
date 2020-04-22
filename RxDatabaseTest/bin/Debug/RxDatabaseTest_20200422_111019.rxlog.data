@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="bef6eec9e71684c"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="kirushakthy"
+		host="LAPTOP-I3SMJTM7"
+		rxversion="6.1.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="22/04/2020 11:10:19"
+		timestampiso="2020-04-22T10:10:19"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="22.46s"
+			durationms="22460"
+			type="test suite"
+			rid="13340feb545792a0"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testsuitename="RxDatabaseTest"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="1">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Success"
+				duration="22.42s"
+				durationms="22422"
+				type="test case"
+				rid="15ab7f7cd19c3560"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				testcasename="TestCase1"
+				testcaseid="eb4766bc-1586-4403-87ba-a1ef3baf550a"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="22.39s"
+					durationms="22388"
+					type="test module"
+					rid="d186bf5695afdae"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="ValidatePage"
+					moduleid="6a157bd6-6567-47a9-8248-4a08244faf2d"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.303"
+						timeRelativeToTestModuleStartTime="00:00.011"
+						timeWallClock="11:10:19"
+						time="00:00.303"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site 'https://www.virginmedia.com/' with browser 'IE' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.021"
+						timeRelativeToTestModuleStartTime="00:00.730"
+						timeWallClock="11:10:20"
+						time="00:01.021"
+						level="Info"
+						category="Delay">
+						<message>
+							Waiting for 10s.
+						</message>
+						<metainfo
+							itemindex="1"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="86"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:11.086"
+						timeRelativeToTestModuleStartTime="00:10.795"
+						timeWallClock="11:10:30"
+						time="00:11.086"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='My Virgin Media
+    ') on item 'VirginMediaOfficialSite.MyVirginMedia'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="89"
+							itemindex="2"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.621"
+						timeRelativeToTestModuleStartTime="00:17.330"
+						timeWallClock="11:10:36"
+						time="00:17.621"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.MyVirginMedia"
+							id="142d9fa395fb46ac8c7eb261e4938345"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="90"
+							loglvl="Success"
+							itemindex="2"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.792"
+						timeRelativeToTestModuleStartTime="00:17.501"
+						timeWallClock="11:10:36"
+						time="00:17.792"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Expanding our network
+    ') on item 'VirginMediaOfficialSite.ContainerFluid.ExpandingOurNetwork'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[3]/a[@innertext~'^Expanding\ our\ network\ \ \ ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.ExpandingOurNetwork"
+							id="c0083344eaba408595139840c6dabf9e"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="93"
+							itemindex="3"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.384"
+						timeRelativeToTestModuleStartTime="00:19.092"
+						timeWallClock="11:10:38"
+						time="00:19.384"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.ExpandingOurNetwork' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[3]/a[@innertext~'^Expanding\ our\ network\ \ \ ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.ExpandingOurNetwork"
+							id="c0083344eaba408595139840c6dabf9e"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="94"
+							loglvl="Success"
+							itemindex="3"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.550"
+						timeRelativeToTestModuleStartTime="00:19.259"
+						timeWallClock="11:10:38"
+						time="00:19.550"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='For business
+    ') on item 'VirginMediaOfficialSite.ContainerFluid.ForBusiness'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[5]/a[@innertext='For business    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.ForBusiness"
+							id="c4cbcd8230c24271859610fa591f4520"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="97"
+							itemindex="4"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:20.277"
+						timeRelativeToTestModuleStartTime="00:19.986"
+						timeWallClock="11:10:39"
+						time="00:20.277"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.ForBusiness' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[5]/a[@innertext='For business    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.ForBusiness"
+							id="c4cbcd8230c24271859610fa591f4520"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="98"
+							loglvl="Success"
+							itemindex="4"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:20.453"
+						timeRelativeToTestModuleStartTime="00:20.162"
+						timeWallClock="11:10:39"
+						time="00:20.453"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Help
+    ') on item 'VirginMediaOfficialSite.ContainerFluid.Help'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[4]/a[@innertext='Help    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.Help"
+							id="729e15b12fc942c9996e6e5e72617efa"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="101"
+							itemindex="5"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:21.343"
+						timeRelativeToTestModuleStartTime="00:21.052"
+						timeWallClock="11:10:40"
+						time="00:21.343"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.Help' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[4]/a[@innertext='Help    ']"
+							fullname="RxDatabaseTestRepository.VirginMediaOfficialSite.ContainerFluid.Help"
+							id="729e15b12fc942c9996e6e5e72617efa"
+							timeout="90000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="102"
+							loglvl="Success"
+							itemindex="5"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:21.718"
+						timeRelativeToTestModuleStartTime="00:21.427"
+						timeWallClock="11:10:40"
+						time="00:21.718"
+						level="Info"
+						category="User">
+						<message>
+							<a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_af9e76e4\RxDataba_435d5b08_rxlog.jpg"><img src="images_RxDataba_af9e76e4\RxDataba_435d5b08_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="6"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.cs"
+							codeline="105"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:21.725"
+						timeRelativeToTestModuleStartTime="00:21.434"
+						timeWallClock="11:10:40"
+						time="00:21.725"
+						level="Info"
+						category="User">
+						<message>
+							Inside CloseBrowser()&#32;
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.UserCode.cs"
+							codeline="37"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.607"
+						timeRelativeToTestModuleStartTime="00:22.316"
+						timeWallClock="11:10:41"
+						time="00:22.607"
+						level="Info"
+						category="User">
+						<message>
+							0
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\ValidatePage.UserCode.cs"
+							codeline="39"
+							loglvl="Info"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

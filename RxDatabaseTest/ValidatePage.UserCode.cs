@@ -32,5 +32,21 @@ namespace RxDatabaseTest
             // Your recording specific initialization code goes here.
         }
 
+        public void CloseBrowser()
+        {
+        	Report.Info("Inside CloseBrowser() " );
+//        	IList<Ranorex.WebDocument> webList = Host.Local.Find<Ranorex.WebDocument>("/dom[@dom='www.virginmedia.com']");
+			IList<Ranorex.WebDocument> webList = Host.Local.Find<Ranorex.WebDocument>("/dom[@domain='www.virginmedia.com']");        	
+			Report.Info(webList.Count.ToString());
+			foreach (Ranorex.WebDocument webdoc in webList)
+			{  
+			    webdoc.Close();
+			    Report.Success("Browser Closed Succeasfully");
+			}
+//			Report.Info("Before  FindSingle() " );
+//			Ranorex.WebDocument doc = Host.Local.FindSingle("/dom[@domain='www.virginmedia.com']");
+//			doc.Close();
+        }
+
     }
 }

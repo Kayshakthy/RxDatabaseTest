@@ -1,11 +1,12 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="ValidatePage.rxrec" />
+    <Element value="ValidatePage.UserCode.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="RxDatabaseTest.rxtst" />
     <Element value="ValidatePage.rxrec" />
+    <Element value="ValidatePage.UserCode.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

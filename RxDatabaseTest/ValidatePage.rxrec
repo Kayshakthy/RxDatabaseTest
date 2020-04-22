@@ -1840,7 +1840,7 @@ RUtIkkh++fpRRD98/SigD//Z
 			</helperscreenshot>
 		</mouseitem>
 		<closeapprecorditem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="f04a60dc-0eeb-47a1-a467-4cb427dabf92"
 		method="KillProcess"
@@ -1855,6 +1855,16 @@ RUtIkkh++fpRRD98/SigD//Z
 				</path>
 			</info>
 		</closeapprecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CloseBrowser"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="c4c04d11-970e-4b77-8779-d1d1d8a70ddd"/>
+		</userrecorditem>
 		<validationitem
 		enabled="False"
 		optional="False"
