@@ -88,6 +88,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>20e3f05f-9343-4364-be38-a5abda5c6597</id>
     </Compile>
+    <Compile Include="YahooMail.cs">
+      <BoundTo>d0adb551-9168-4bc3-9eb5-94e1f4ad0e94</BoundTo>
+      <DependentUpon>YahooMail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3a081700-7924-47b2-ba24-fd0fd6e807f4</id>
+    </Compile>
+    <Compile Include="YahooMail.UserCode.cs">
+      <BoundTo>d0adb551-9168-4bc3-9eb5-94e1f4ad0e94</BoundTo>
+      <DependentUpon>YahooMail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea12d471-4c1d-4f33-b564-2c8d54b90a95</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -108,6 +120,11 @@
       <id>f9b3120a-3965-497b-8ffe-b685327ec77d</id>
       <repoid>f4773d68-4003-478a-ad59-f5ab9d556d62</repoid>
       <reporootid>558d6956-a12d-4102-ae72-579bfe35899a</reporootid>
+    </None>
+    <None Include="YahooMail.rxrec">
+      <BoundTo>f9b3120a-3965-497b-8ffe-b685327ec77d</BoundTo>
+      <id>d0adb551-9168-4bc3-9eb5-94e1f4ad0e94</id>
+      <recordtableid>2f8b24b0-f8e4-464e-b897-e8b3f8e242b3</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

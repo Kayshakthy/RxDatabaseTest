@@ -31,6 +31,9 @@ namespace RxDatabaseTest
         RxDatabaseTestRepositoryFolders.VirginMediaMyVirginMediaAppFolder _virginmediamyvirginmedia;
         RxDatabaseTestRepositoryFolders.VirginMediaBusinessBusinessAndPubAppFolder _virginmediabusinessbusinessandpub;
         RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder _virginmediaofficialsiteinternet;
+        RxDatabaseTestRepositoryFolders.YahooLoginAppFolder _yahoologin;
+        RxDatabaseTestRepositoryFolders.YahooMailAppFolder _yahoomail;
+        RxDatabaseTestRepositoryFolders.YahooUKNewsEmailAndSearchInteAppFolder _yahoouknewsemailandsearchinte;
 
         /// <summary>
         /// Gets the singleton class instance representing the RxDatabaseTestRepository element repository.
@@ -51,6 +54,9 @@ namespace RxDatabaseTest
             _virginmediamyvirginmedia = new RxDatabaseTestRepositoryFolders.VirginMediaMyVirginMediaAppFolder(this);
             _virginmediabusinessbusinessandpub = new RxDatabaseTestRepositoryFolders.VirginMediaBusinessBusinessAndPubAppFolder(this);
             _virginmediaofficialsiteinternet = new RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder(this);
+            _yahoologin = new RxDatabaseTestRepositoryFolders.YahooLoginAppFolder(this);
+            _yahoomail = new RxDatabaseTestRepositoryFolders.YahooMailAppFolder(this);
+            _yahoouknewsemailandsearchinte = new RxDatabaseTestRepositoryFolders.YahooUKNewsEmailAndSearchInteAppFolder(this);
         }
 
 #region Variables
@@ -103,6 +109,33 @@ namespace RxDatabaseTest
         public virtual RxDatabaseTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder VirginMediaOfficialSiteInternet
         {
             get { return _virginmediaofficialsiteinternet; }
+        }
+
+        /// <summary>
+        /// The YahooLogin folder.
+        /// </summary>
+        [RepositoryFolder("bca39131-1b42-431e-a5ff-877e444ff632")]
+        public virtual RxDatabaseTestRepositoryFolders.YahooLoginAppFolder YahooLogin
+        {
+            get { return _yahoologin; }
+        }
+
+        /// <summary>
+        /// The YahooMail folder.
+        /// </summary>
+        [RepositoryFolder("ead32e73-8d7a-44f2-a791-3bc5fe8ae9e4")]
+        public virtual RxDatabaseTestRepositoryFolders.YahooMailAppFolder YahooMail
+        {
+            get { return _yahoomail; }
+        }
+
+        /// <summary>
+        /// The YahooUKNewsEmailAndSearchInte folder.
+        /// </summary>
+        [RepositoryFolder("471d34d2-0e13-4351-8740-590f8401d9b9")]
+        public virtual RxDatabaseTestRepositoryFolders.YahooUKNewsEmailAndSearchInteAppFolder YahooUKNewsEmailAndSearchInte
+        {
+            get { return _yahoouknewsemailandsearchinte; }
         }
     }
 
@@ -790,6 +823,482 @@ namespace RxDatabaseTest
             /// The ClientCaption item info.
             /// </summary>
             [RepositoryItemInfo("5a6d3c5d-1af1-4a78-95a9-4ba6807977ff")]
+            public virtual RepoItemInfo ClientCaptionInfo
+            {
+                get
+                {
+                    return _clientcaptionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The YahooLoginAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("bca39131-1b42-431e-a5ff-877e444ff632")]
+        public partial class YahooLoginAppFolder : RepoGenBaseFolder
+        {
+            YahooInfoClass _yahooInfo;
+            RepoItemInfo _strongtagsignintoInfo;
+            RepoItemInfo _loginusernameInfo;
+            LoginSigninInfoClass _loginsigninInfo;
+            RepoItemInfo _loginpasswdInfo;
+            RepoItemInfo _loginsignin1Info;
+            RepoItemInfo _looksgoodInfo;
+
+            /// <summary>
+            /// Creates a new YahooLogin  folder.
+            /// </summary>
+            public YahooLoginAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("YahooLogin", "/dom[@domain='login.yahoo.com']", parentFolder, 30000, null, false, "bca39131-1b42-431e-a5ff-877e444ff632", "")
+            {
+                _yahooInfo = new YahooInfoClass(this);
+                _strongtagsignintoInfo = new RepoItemInfo(this, "StrongTagSignInTo", "body/div[2]/div[1]/div[1]/div[2]/strong[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Sign']", 30000, null, "90e5f1d3-4d0c-4b2d-9319-b7b453e48328");
+                _loginusernameInfo = new RepoItemInfo(this, "LoginUsername", ".//input[#'login-username']", 30000, null, "c78be513-d70e-4888-826f-716e51553909");
+                _loginsigninInfo = new LoginSigninInfoClass(this);
+                _loginpasswdInfo = new RepoItemInfo(this, "LoginPasswd", ".//input[#'login-passwd']", 30000, null, "4ca9b548-1d56-4767-9b8f-028c1e7bf7c1");
+                _loginsignin1Info = new RepoItemInfo(this, "LoginSignin1", ".//button[#'login-signin']", 30000, null, "e69b68b6-1534-4905-9384-0a73131c2fd3");
+                _looksgoodInfo = new RepoItemInfo(this, "LooksGood", ".//div[#'login-body']//form[@action='/account/comm-channel/refresh?display=login&.intl=gb&intl=gb&.lang=en-GB&src=ym&done=https%3A%2F%2Fguce.yahoo.com%2Fconsent%3Fgcrumb%3DD93K-xg%26trapType%3Dlogin%26done%3Dhttps%253A%252F%252Fmail.yahoo.com%252Fd%26src%3Dym&scrumb=VxRMdbJNZ42']/div[2]/button[@innertext='Looks good']", 30000, null, "66cac81a-eab1-4251-bae1-b5f728b3ecf4");
+            }
+
+            /// <summary>
+            /// The YahooInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("11281bbb-c6db-4012-8678-6a5a3b23bd28")]
+            public class YahooInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// YahooInfoClass class constructor.
+                /// </summary>
+                public YahooInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "Yahoo", "body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']", 30000, null, "11281bbb-c6db-4012-8678-6a5a3b23bd28")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("622ab164-685f-4a0b-9e65-fe5c4b3ac794")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("622ab164-685f-4a0b-9e65-fe5c4b3ac794");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("622ab164-685f-4a0b-9e65-fe5c4b3ac794")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("622ab164-685f-4a0b-9e65-fe5c4b3ac794", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The LoginSigninInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("da30ae23-2ca2-4b00-bfb7-3d481b4d75d3")]
+            public class LoginSigninInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// LoginSigninInfoClass class constructor.
+                /// </summary>
+                public LoginSigninInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "LoginSignin", ".//input[#'login-signin']", 30000, null, "da30ae23-2ca2-4b00-bfb7-3d481b4d75d3")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("8e311376-70e0-4c1d-b25a-83ed68191a2f")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("8e311376-70e0-4c1d-b25a-83ed68191a2f");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("8e311376-70e0-4c1d-b25a-83ed68191a2f")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("8e311376-70e0-4c1d-b25a-83ed68191a2f", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bca39131-1b42-431e-a5ff-877e444ff632")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bca39131-1b42-431e-a5ff-877e444ff632")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Yahoo item.
+            /// </summary>
+            [RepositoryItem("11281bbb-c6db-4012-8678-6a5a3b23bd28")]
+            public virtual Ranorex.ImgTag Yahoo
+            {
+                get
+                {
+                    return _yahooInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Yahoo item info.
+            /// </summary>
+            [RepositoryItemInfo("11281bbb-c6db-4012-8678-6a5a3b23bd28")]
+            public virtual YahooInfoClass YahooInfo
+            {
+                get
+                {
+                    return _yahooInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StrongTagSignInTo item.
+            /// </summary>
+            [RepositoryItem("90e5f1d3-4d0c-4b2d-9319-b7b453e48328")]
+            public virtual Ranorex.StrongTag StrongTagSignInTo
+            {
+                get
+                {
+                    return _strongtagsignintoInfo.CreateAdapter<Ranorex.StrongTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StrongTagSignInTo item info.
+            /// </summary>
+            [RepositoryItemInfo("90e5f1d3-4d0c-4b2d-9319-b7b453e48328")]
+            public virtual RepoItemInfo StrongTagSignInToInfo
+            {
+                get
+                {
+                    return _strongtagsignintoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginUsername item.
+            /// </summary>
+            [RepositoryItem("c78be513-d70e-4888-826f-716e51553909")]
+            public virtual Ranorex.InputTag LoginUsername
+            {
+                get
+                {
+                    return _loginusernameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginUsername item info.
+            /// </summary>
+            [RepositoryItemInfo("c78be513-d70e-4888-826f-716e51553909")]
+            public virtual RepoItemInfo LoginUsernameInfo
+            {
+                get
+                {
+                    return _loginusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginSignin item.
+            /// </summary>
+            [RepositoryItem("da30ae23-2ca2-4b00-bfb7-3d481b4d75d3")]
+            public virtual Ranorex.InputTag LoginSignin
+            {
+                get
+                {
+                    return _loginsigninInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginSignin item info.
+            /// </summary>
+            [RepositoryItemInfo("da30ae23-2ca2-4b00-bfb7-3d481b4d75d3")]
+            public virtual LoginSigninInfoClass LoginSigninInfo
+            {
+                get
+                {
+                    return _loginsigninInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginPasswd item.
+            /// </summary>
+            [RepositoryItem("4ca9b548-1d56-4767-9b8f-028c1e7bf7c1")]
+            public virtual Ranorex.InputTag LoginPasswd
+            {
+                get
+                {
+                    return _loginpasswdInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginPasswd item info.
+            /// </summary>
+            [RepositoryItemInfo("4ca9b548-1d56-4767-9b8f-028c1e7bf7c1")]
+            public virtual RepoItemInfo LoginPasswdInfo
+            {
+                get
+                {
+                    return _loginpasswdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginSignin1 item.
+            /// </summary>
+            [RepositoryItem("e69b68b6-1534-4905-9384-0a73131c2fd3")]
+            public virtual Ranorex.ButtonTag LoginSignin1
+            {
+                get
+                {
+                    return _loginsignin1Info.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginSignin1 item info.
+            /// </summary>
+            [RepositoryItemInfo("e69b68b6-1534-4905-9384-0a73131c2fd3")]
+            public virtual RepoItemInfo LoginSignin1Info
+            {
+                get
+                {
+                    return _loginsignin1Info;
+                }
+            }
+
+            /// <summary>
+            /// The LooksGood item.
+            /// </summary>
+            [RepositoryItem("66cac81a-eab1-4251-bae1-b5f728b3ecf4")]
+            public virtual Ranorex.ButtonTag LooksGood
+            {
+                get
+                {
+                    return _looksgoodInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LooksGood item info.
+            /// </summary>
+            [RepositoryItemInfo("66cac81a-eab1-4251-bae1-b5f728b3ecf4")]
+            public virtual RepoItemInfo LooksGoodInfo
+            {
+                get
+                {
+                    return _looksgoodInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The YahooMailAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ead32e73-8d7a-44f2-a791-3bc5fe8ae9e4")]
+        public partial class YahooMailAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _continueInfo;
+            RepoItemInfo _letsgoInfo;
+            RepoItemInfo _signoutInfo;
+
+            /// <summary>
+            /// Creates a new YahooMail  folder.
+            /// </summary>
+            public YahooMailAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("YahooMail", "/dom[@domain='mail.yahoo.com']", parentFolder, 30000, null, false, "ead32e73-8d7a-44f2-a791-3bc5fe8ae9e4", "")
+            {
+                _continueInfo = new RepoItemInfo(this, "Continue", ".//td[#'dt-content']//ul/?/?/a[@href~'^https://mail\\.yahoo\\.com/b/']/span[@innertext='Continue']", 30000, null, "bacb0b6b-6432-4c54-a27f-3b9266f21c38");
+                _letsgoInfo = new RepoItemInfo(this, "LetsGo", ".//div[#'app']/div[1]/div//a[@innertext='Let''s go!']", 30000, null, "3bc10033-6995-4985-bcdb-121ff9856ee5");
+                _signoutInfo = new RepoItemInfo(this, "SignOut", ".//div[#'app']/div[1]/table[1]/tbody/tr[1]/td[3]/form[@name='form']/a[@innertext='Sign Out']", 30000, null, "7bbdef37-b9ce-4200-8e8d-a92408ec9260");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ead32e73-8d7a-44f2-a791-3bc5fe8ae9e4")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ead32e73-8d7a-44f2-a791-3bc5fe8ae9e4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Continue item.
+            /// </summary>
+            [RepositoryItem("bacb0b6b-6432-4c54-a27f-3b9266f21c38")]
+            public virtual Ranorex.SpanTag Continue
+            {
+                get
+                {
+                    return _continueInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Continue item info.
+            /// </summary>
+            [RepositoryItemInfo("bacb0b6b-6432-4c54-a27f-3b9266f21c38")]
+            public virtual RepoItemInfo ContinueInfo
+            {
+                get
+                {
+                    return _continueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LetsGo item.
+            /// </summary>
+            [RepositoryItem("3bc10033-6995-4985-bcdb-121ff9856ee5")]
+            public virtual Ranorex.ATag LetsGo
+            {
+                get
+                {
+                    return _letsgoInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LetsGo item info.
+            /// </summary>
+            [RepositoryItemInfo("3bc10033-6995-4985-bcdb-121ff9856ee5")]
+            public virtual RepoItemInfo LetsGoInfo
+            {
+                get
+                {
+                    return _letsgoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignOut item.
+            /// </summary>
+            [RepositoryItem("7bbdef37-b9ce-4200-8e8d-a92408ec9260")]
+            public virtual Ranorex.ATag SignOut
+            {
+                get
+                {
+                    return _signoutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignOut item info.
+            /// </summary>
+            [RepositoryItemInfo("7bbdef37-b9ce-4200-8e8d-a92408ec9260")]
+            public virtual RepoItemInfo SignOutInfo
+            {
+                get
+                {
+                    return _signoutInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The YahooUKNewsEmailAndSearchInteAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("471d34d2-0e13-4351-8740-590f8401d9b9")]
+        public partial class YahooUKNewsEmailAndSearchInteAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clientcaptionInfo;
+
+            /// <summary>
+            /// Creates a new YahooUKNewsEmailAndSearchInte  folder.
+            /// </summary>
+            public YahooUKNewsEmailAndSearchInteAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("YahooUKNewsEmailAndSearchInte", "/form[@title~'^Yahoo\\ UK\\ \\|\\ News,\\ email\\ an']", parentFolder, 30000, null, true, "471d34d2-0e13-4351-8740-590f8401d9b9", "")
+            {
+                _clientcaptionInfo = new RepoItemInfo(this, "ClientCaption", "element[@class='Client Caption']", 30000, null, "b14e0fb6-6826-4ef6-8e48-bfc813f2fdb5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("471d34d2-0e13-4351-8740-590f8401d9b9")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("471d34d2-0e13-4351-8740-590f8401d9b9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item.
+            /// </summary>
+            [RepositoryItem("b14e0fb6-6826-4ef6-8e48-bfc813f2fdb5")]
+            public virtual Ranorex.Unknown ClientCaption
+            {
+                get
+                {
+                    return _clientcaptionInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item info.
+            /// </summary>
+            [RepositoryItemInfo("b14e0fb6-6826-4ef6-8e48-bfc813f2fdb5")]
             public virtual RepoItemInfo ClientCaptionInfo
             {
                 get

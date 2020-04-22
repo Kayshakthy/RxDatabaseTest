@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1c7fcc0f2c529772"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="kirushakthy"
+		host="LAPTOP-I3SMJTM7"
+		rxversion="6.1.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="22/04/2020 12:58:21"
+		timestampiso="2020-04-22T11:58:21"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="44.05s"
+			durationms="44052"
+			type="test suite"
+			rid="3e80136bb9f6890"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testsuitename="RxDatabaseTest"
+			runconfigname="TestRun2"
+			runlabel=""
+			maxchildren="2">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Success"
+				duration="44.02s"
+				durationms="44019"
+				type="test case"
+				rid="1c6b4b2019013509"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				testcasename="TestCase2"
+				testcaseid="af2e6508-1e76-4266-aa13-59373edbedfb"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="43.98s"
+					durationms="43980"
+					type="test module"
+					rid="8f845dfbb444288"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="YahooMail"
+					moduleid="2f8b24b0-f8e4-464e-b897-e8b3f8e242b3"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.373"
+						timeRelativeToTestModuleStartTime="00:00.012"
+						timeWallClock="12:58:22"
+						time="00:00.373"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site 'mail.yahoo.com' with browser 'IE' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.070"
+						timeRelativeToTestModuleStartTime="00:00.710"
+						timeWallClock="12:58:22"
+						time="00:01.070"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png') on item 'YahooLogin.Yahoo'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.066"
+						timeRelativeToTestModuleStartTime="00:11.706"
+						timeWallClock="12:58:33"
+						time="00:12.066"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Src' of element for item 'RxDatabaseTestRepository.YahooLogin.Yahoo' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.313"
+						timeRelativeToTestModuleStartTime="00:11.953"
+						timeWallClock="12:58:34"
+						time="00:12.313"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=150,Height=45}) on item 'YahooLogin.Yahoo'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.271"
+						timeRelativeToTestModuleStartTime="00:12.911"
+						timeWallClock="12:58:35"
+						time="00:13.271"
+						level="Success"
+						category="Validation">
+						<message>
+							Screenshot of item 'RxDatabaseTestRepository.YahooLogin.Yahoo' does contain the specified image.
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="91"
+							loglvl="Success"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							itemindex="2"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.555"
+						timeRelativeToTestModuleStartTime="00:13.195"
+						timeWallClock="12:58:35"
+						time="00:13.555"
+						level="Info"
+						category="User">
+						<message>
+							<a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_defb494d\RxDataba_4c38d619_rxlog.jpg"><img src="images_RxDataba_defb494d\RxDataba_4c38d619_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="3"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="94"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.558"
+						timeRelativeToTestModuleStartTime="00:13.198"
+						timeWallClock="12:58:35"
+						time="00:13.558"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='
+                    Sign in to Yahoo&#160;Mail
+                ') on item 'YahooLogin.StrongTagSignInTo'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[2]/div[1]/div[1]/div[2]/strong[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Sign']"
+							fullname="RxDatabaseTestRepository.YahooLogin.StrongTagSignInTo"
+							id="90e5f1d34d0c4b2d9319b7b453e48328"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="96"
+							itemindex="4"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.367"
+						timeRelativeToTestModuleStartTime="00:14.007"
+						timeWallClock="12:58:36"
+						time="00:14.367"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.YahooLogin.StrongTagSignInTo' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[2]/div[1]/div[1]/div[2]/strong[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Sign']"
+							fullname="RxDatabaseTestRepository.YahooLogin.StrongTagSignInTo"
+							id="90e5f1d34d0c4b2d9319b7b453e48328"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="97"
+							loglvl="Success"
+							itemindex="4"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.547"
+						timeRelativeToTestModuleStartTime="00:14.187"
+						timeWallClock="12:58:36"
+						time="00:14.547"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Id='login-username') on item 'YahooLogin.LoginUsername'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginUsername"
+							id="c78be513d70e4888826f716e51553909"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="100"
+							itemindex="5"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.367"
+						timeRelativeToTestModuleStartTime="00:15.007"
+						timeWallClock="12:58:37"
+						time="00:15.367"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Id' of element for item 'RxDatabaseTestRepository.YahooLogin.LoginUsername' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginUsername"
+							id="c78be513d70e4888826f716e51553909"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="101"
+							loglvl="Success"
+							itemindex="5"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.548"
+						timeRelativeToTestModuleStartTime="00:15.188"
+						timeWallClock="12:58:37"
+						time="00:15.548"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='input') on item 'YahooLogin.LoginUsername'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginUsername"
+							id="c78be513d70e4888826f716e51553909"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="104"
+							itemindex="6"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.380"
+						timeRelativeToTestModuleStartTime="00:16.020"
+						timeWallClock="12:58:38"
+						time="00:16.380"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'RxDatabaseTestRepository.YahooLogin.LoginUsername' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginUsername"
+							id="c78be513d70e4888826f716e51553909"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="105"
+							loglvl="Success"
+							itemindex="6"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:16.540"
+						timeRelativeToTestModuleStartTime="00:16.180"
+						timeWallClock="12:58:38"
+						time="00:16.540"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Up item 'YahooLogin.LoginUsername' at 70;31.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginUsername"
+							id="c78be513d70e4888826f716e51553909"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="108"
+							itemindex="7"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:18.318"
+						timeRelativeToTestModuleStartTime="00:17.958"
+						timeWallClock="12:58:40"
+						time="00:18.318"
+						level="Info"
+						category="Keyboard">
+						<message>
+							Key sequence 'kayshakthy' with focus on 'YahooLogin.LoginUsername'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginUsername"
+							id="c78be513d70e4888826f716e51553909"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="113"
+							itemindex="8"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:20.733"
+						timeRelativeToTestModuleStartTime="00:20.373"
+						timeWallClock="12:58:42"
+						time="00:20.733"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Id='login-signin') on item 'YahooLogin.LoginSignin'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="117"
+							itemindex="9"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:21.379"
+						timeRelativeToTestModuleStartTime="00:21.019"
+						timeWallClock="12:58:43"
+						time="00:21.379"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Id' of element for item 'RxDatabaseTestRepository.YahooLogin.LoginSignin' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="118"
+							loglvl="Success"
+							itemindex="9"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:21.534"
+						timeRelativeToTestModuleStartTime="00:21.174"
+						timeWallClock="12:58:43"
+						time="00:21.534"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='input') on item 'YahooLogin.LoginSignin'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="121"
+							itemindex="10"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.153"
+						timeRelativeToTestModuleStartTime="00:21.793"
+						timeWallClock="12:58:44"
+						time="00:22.153"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'RxDatabaseTestRepository.YahooLogin.LoginSignin' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="122"
+							loglvl="Success"
+							itemindex="10"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.322"
+						timeRelativeToTestModuleStartTime="00:21.962"
+						timeWallClock="12:58:44"
+						time="00:22.322"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Value='Next') on item 'YahooLogin.LoginSignin'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="125"
+							itemindex="11"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.899"
+						timeRelativeToTestModuleStartTime="00:22.539"
+						timeWallClock="12:58:44"
+						time="00:22.899"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Value' of element for item 'RxDatabaseTestRepository.YahooLogin.LoginSignin' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="126"
+							loglvl="Success"
+							itemindex="11"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.066"
+						timeRelativeToTestModuleStartTime="00:22.706"
+						timeWallClock="12:58:44"
+						time="00:23.066"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=360,Height=52}) on item 'YahooLogin.LoginSignin'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="129"
+							itemindex="12"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.823"
+						timeRelativeToTestModuleStartTime="00:23.463"
+						timeWallClock="12:58:45"
+						time="00:23.823"
+						level="Success"
+						category="Validation">
+						<message>
+							Screenshot of item 'RxDatabaseTestRepository.YahooLogin.LoginSignin' does contain the specified image.
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="130"
+							loglvl="Success"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							itemindex="12"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.982"
+						timeRelativeToTestModuleStartTime="00:23.622"
+						timeWallClock="12:58:45"
+						time="00:23.982"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'YahooLogin.LoginSignin' at 194;23.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin"
+							id="da30ae232ca24b00bfb73d481b4d75d3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="133"
+							itemindex="13"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:25.838"
+						timeRelativeToTestModuleStartTime="00:25.478"
+						timeWallClock="12:58:47"
+						time="00:25.838"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'YahooLogin.LoginPasswd' at 107;32.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-passwd']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginPasswd"
+							id="4ca9b5481d5647679b8f028c1e7bf7c1"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="137"
+							itemindex="14"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:28.202"
+						timeRelativeToTestModuleStartTime="00:27.842"
+						timeWallClock="12:58:50"
+						time="00:28.202"
+						level="Info"
+						category="Keyboard">
+						<message>
+							Key sequence '{LShiftKey down}K{LShiftKey up}iru{LShiftKey down}${LShiftKey up}10306' with focus on 'YahooLogin.LoginPasswd'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//input[#'login-passwd']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginPasswd"
+							id="4ca9b5481d5647679b8f028c1e7bf7c1"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="141"
+							itemindex="15"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.958"
+						timeRelativeToTestModuleStartTime="00:30.598"
+						timeWallClock="12:58:52"
+						time="00:30.958"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'YahooLogin.LoginSignin1' at 234;27.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']//button[#'login-signin']"
+							fullname="RxDatabaseTestRepository.YahooLogin.LoginSignin1"
+							id="e69b68b61534490593840a73131c2fd3"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="145"
+							itemindex="16"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:32.897"
+						timeRelativeToTestModuleStartTime="00:32.537"
+						timeWallClock="12:58:54"
+						time="00:32.897"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Sign Out') on item 'YahooMail.SignOut'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/table[1]/tbody/tr[1]/td[3]/form[@name='form']/a[@innertext='Sign Out']"
+							fullname="RxDatabaseTestRepository.YahooMail.SignOut"
+							id="7bbdef37b9ce42008e8da92408ec9260"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="161"
+							itemindex="20"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.415"
+						timeRelativeToTestModuleStartTime="00:36.055"
+						timeWallClock="12:58:58"
+						time="00:36.415"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'RxDatabaseTestRepository.YahooMail.SignOut' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/table[1]/tbody/tr[1]/td[3]/form[@name='form']/a[@innertext='Sign Out']"
+							fullname="RxDatabaseTestRepository.YahooMail.SignOut"
+							id="7bbdef37b9ce42008e8da92408ec9260"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="162"
+							loglvl="Success"
+							itemindex="20"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.775"
+						timeRelativeToTestModuleStartTime="00:36.415"
+						timeWallClock="12:58:58"
+						time="00:36.775"
+						level="Info"
+						category="User">
+						<message>
+							KAYSHAKTHY Yahoo Mail<br/><a class="thickbox" style="padding-right:8px" rel="module" href="images_RxDataba_defb494d\RxDataba_d79dd619_rxlog.jpg"><img src="images_RxDataba_defb494d\RxDataba_d79dd619_rxlog_thumb.jpg" alt="Screenshot"/></a>
+						</message>
+						<metainfo
+							itemindex="21"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="165"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.784"
+						timeRelativeToTestModuleStartTime="00:36.424"
+						timeWallClock="12:58:58"
+						time="00:36.784"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'YahooMail.SignOut' at 36;15.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/table[1]/tbody/tr[1]/td[3]/form[@name='form']/a[@innertext='Sign Out']"
+							fullname="RxDatabaseTestRepository.YahooMail.SignOut"
+							id="7bbdef37b9ce42008e8da92408ec9260"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="167"
+							itemindex="22"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:40.673"
+						timeRelativeToTestModuleStartTime="00:40.313"
+						timeWallClock="12:59:02"
+						time="00:40.673"
+						level="Info"
+						category="User">
+						<message>
+							Inside CloseBrowser()&#32;
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.UserCode.cs"
+							codeline="37"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:41.680"
+						timeRelativeToTestModuleStartTime="00:41.320"
+						timeWallClock="12:59:03"
+						time="00:41.680"
+						level="Info"
+						category="User">
+						<message>
+							0
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.UserCode.cs"
+							codeline="39"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:42.999"
+						timeRelativeToTestModuleStartTime="00:42.639"
+						timeWallClock="12:59:04"
+						time="00:42.999"
+						level="Info"
+						category="User">
+						<message>
+							1
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.UserCode.cs"
+							codeline="47"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.190"
+						timeRelativeToTestModuleStartTime="00:43.830"
+						timeWallClock="12:59:06"
+						time="00:44.190"
+						level="Info"
+						category="User">
+						<message>
+							/dom[@domain='uk.yahoo.com']
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.UserCode.cs"
+							codeline="50"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.281"
+						timeRelativeToTestModuleStartTime="00:43.921"
+						timeWallClock="12:59:06"
+						time="00:44.281"
+						level="Success"
+						category="User">
+						<message>
+							Browser Closed Successfully !
+						</message>
+						<metainfo
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.UserCode.cs"
+							codeline="52"
+							loglvl="Success"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

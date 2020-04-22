@@ -7,6 +7,9 @@ rxversion="6.1">
 			name="RxDatabaseTest"
 			id="a050d07d-2877-48a5-8ee6-70aa4ba65214"
 			reportlevel="Info;20"/>
+			<testcase
+			name="TestCase2"
+			id="af2e6508-1e76-4266-aa13-59373edbedfb"/>
 			<testmodule
 			name="ValidatePage"
 			id="d2044bff-83ff-4809-aa04-0f0cfa70cf11"
@@ -27,6 +30,11 @@ rxversion="6.1">
 			<testcase
 			name="TestCase1"
 			id="eb4766bc-1586-4403-87ba-a1ef3baf550a"/>
+			<testmodule
+			name="YahooMail"
+			id="fa09bf4e-e8d0-466c-a54b-49ee27963caa"
+			ref="2f8b24b0-f8e4-464e-b897-e8b3f8e242b3"
+			type="Recording"/>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -42,19 +50,42 @@ rxversion="6.1">
 						name="ValidatePage"
 						id="d2044bff-83ff-4809-aa04-0f0cfa70cf11"/>
 					</testcase>
+					<testcase
+					name="TestCase2"
+					id="af2e6508-1e76-4266-aa13-59373edbedfb">
+						<testmodule
+						name="YahooMail"
+						id="fa09bf4e-e8d0-466c-a54b-49ee27963caa"/>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources/>
 	<testconfigurations
-	default="TestRun">
+	default="TestRun2">
 		<testconfiguration
 		name="TestRun">
 			<testcase
 			id="a050d07d-2877-48a5-8ee6-70aa4ba65214"/>
 			<testcase
+			id="af2e6508-1e76-4266-aa13-59373edbedfb"/>
+			<testcase
 			id="eb4766bc-1586-4403-87ba-a1ef3baf550a"/>
+		</testconfiguration>
+		<testconfiguration
+		name="TestRun1">
+			<testcase
+			id="a050d07d-2877-48a5-8ee6-70aa4ba65214"/>
+			<testcase
+			id="af2e6508-1e76-4266-aa13-59373edbedfb"/>
+		</testconfiguration>
+		<testconfiguration
+		name="TestRun2">
+			<testcase
+			id="a050d07d-2877-48a5-8ee6-70aa4ba65214"/>
+			<testcase
+			id="af2e6508-1e76-4266-aa13-59373edbedfb"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references/>

@@ -458,6 +458,292 @@ awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
 xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		name="YahooLogin"
+		id="bca39131-1b42-431e-a5ff-877e444ff632"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@domain='login.yahoo.com']"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="Yahoo"
+			id="11281bbb-c6db-4012-8678-6a5a3b23bd28"
+			searchtimeout="30000ms"
+			capname="imgtag"
+			refpath="/dom[@domain='login.yahoo.com']/body/div[1]/span/a[@title='Yahoo']/img[@alt='Yahoo' and @src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+			addcaps="unknown,webelement,imgtag"
+			refimgid="50cc194f-aae5-4750-93c6-00856cffade1">
+				<image
+				name="Screenshot1"
+				guid="622ab164-685f-4a0b-9e65-fe5c4b3ac794">
+					iVBORw0KGgoAAAANSUhEUgAAAJYAAAAtCAYAAABMDJJUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAC2JJREFUeF7tXAdwXMUZTu/BaZBkgGRCAhMCM5mEZDJhQsqQxJlkQpJJ
+gYwzMa6ycEFuyLYS2+BCXACbCDfZGHfjim2Mhe0YW7jgAsZqp1PvulOXTuVUN+/bu9W9e/e/3X1n
+S2SU9818I1m7+967fd/++////uf3MRcuBgGusFwMClxhuRgUuMJyMSgYtsLqbO1jqX8qY8sfLCa5
+9pHycE8XunjnUCs5l2ZuGlvJ+w5bYbU19LJpX8plj74/k+T023LDPV3ooK+3nz3+Zfv5FNyRVM37
+u8JyoYXM9FZyHq3MP9vO+7vCcqGFzRMqyXk0M/kur2HZQv1dYbnQwtSbc8h5NPPasUC4tyssFxo4
+uryWnEMzYa0QMAm4wnIhRXtTL5t6i/08Cm59LBQNCrjCciFF9vEAG/fhLHIOzfR5u8IjQnCF5UKK
+tEcryPkzc9XvSsO9I/ifFFZ3sJ/58rv4z3gRj7Bwv4bybhaoD4c2NwC9PYy1+HpYU1UP6+mK//Oo
+EGwLzVlH8417djzzWIW1GvuhTJb5Wmt4RAQDwoKD9sLDZbbcMLqCdXeqJwbh5qZxleQ1BD1vtIV7
+hxBs72NntzSyNY+Uh6KPD4Qf3PiJf+Pvbx9s4S+m8K0O8pqCrbWhidUVFoS0a2Y1m3dPPhvzwUj7
+lC/ksNXGSrxyIHRfXeC+J1Pr2dq/lrOZX/UYEx95Mbg+kozP/baUvbailtWXdYdHOQOSlcgrbZ1c
+xVLu9bKET2UP3ANMvCmbLfphIdszp2YgrxQPXn6iJuq6FPF5WvzG6rFgQFilVzu5+qjBgue2NoV7
+2wMCoMYKYhKEJeo3fjRUdLP53y0g+1q54e8V7OKeZrJN0F8Uelk6wso91Ua2Wbk5oZL1dsvF1dfT
+zy7vbWETPxn9kmUc//EsdmpNA+txYJnLr3WypT8uJK9nx+f/UMqaa2JfvgzBQB9fbNT1zNxicdoF
+orbCJQ8UkYMFV44sNky7/SRgJa3+fSk5VnD93yJndJnpATb5c+r8iCBW/BPfyCPbBHWFNcF4qdO+
+aN9uJu67cUwF649E01Foa+xlL/yljI37iNrJtRKLedmDxdxyyoB7pz9Xx6bcrPfMVs74iocvel3k
+nWlTfh5YdUSNFKKEdXx1PXkBQZi91jr7PRxtqvOkd18N7cee08aDf9T5i1BRV1hOCSFS2wpyN8/8
+uoQc44RPfr/A9iUB2F5V/o6KCYY1zXo9wHcKGWB9V/5K/ZnMRsKKKGHBWaMuYObrq+rDvWNx1tgq
+qTGCEB0sHl7G3Lu9ZJ/r5WAJC3xxfLTZhxV5aZL6qEOXcAmCbbFm8erh1risIcXEEdms7GpH+Mo0
+Ci+0szHCz5UQ1Q52iBIWgNNp6iKCEAecbSvwt9lfl29T57eFfLS983xk+43gYAoLK94cwJS+0xnj
+OF8PsS1mvNgYvnoIEFrKvWpfxwlXjiwJX53G3rl6TjulA4EYYcHDn/Rp+WRRSs09KXeEk271cF/E
+V9BFtluJSUZ0kzgih413sGXGIyxcXycJCHozQtsh/ElEZFQfM+GfYRud8InsqKjTjrPvyIuKQs/v
+kO8CgrgHRK47V1f20/4WrLDKQIDYnWSIERaiHziT1MUEkU6wQrUlrHm4jD/0sZV1ZLuZ87+Tzy7v
+a+Yi9Bd2sbyMNn66ruNjOBEWLFD6s3Ws4Fw7zzAvuE8dnQqL4n2znWw3EyJBJF18qYOVXOngn2np
+T+QBEnhhZzO/B1I302/3kH3MPLK4lt+jIquTzxV2HdVcPfubEr44rEBkS/U3U+VrAzHCAi4pLp50
+mydqVeF3/I3qC44xrI/HCO0B5HeoPoLLf17Mujto7/LoMvVhqBNhQeRm4HMg90T1FTz+fMjHPLzY
+T7YLLvwe7S8BqX8uI8cIrnqolC9CiJFqF3zsszks31gUFN5Y30COEZz1tbyYZCq2+ZR71FYYz0+J
+0gxSWHCwsdqoiwqe3hDxBfA71UdwxS9L+EQBc79l/+DI6zRWhIRBAc+lyuE4EZa/KPp8C0gbLT/C
+OLTIz/upFkjRRXsHGakFaozgP7+dz7oM/yVjk3xet02uso3w8OKRWKbGgQgGrLktCBlbNtXfTOT/
+VCCFBRx7xtiyJJFB8p15rKujjxO/U31A+EoXdkb246m32OetkANTIUfhyzkRFpVR3zdP7rgKYS2V
+5PyW/ayY95Fh80R71yH5Ti/raOljrz4tt9B1JfaLEKjMDkqjSSTFzThnBFdUHbuZ60fpfVfAVljV
+nqDUiR//sSwelpa92ynNNiMBak7+ycSKiVShqbrHEKv9ZOkKa6Lh6FI4uFAesQphPfUDe8u5JbGK
+95HhdJq9NcJz4/l3z7YXOay7Cq11PXy7pMaDThKmTmErLGxdqsTfgfl+TqpNcOPYyihzLRPr9mmh
+QnwZqnKD5FjBoRLW0xInHD6ICoeesp+3GYafh2Qp7kW1C+LYRYZmXw83ANRYMPtEpOJTAFa8MifI
+Gqt6BtyXeGArLKDG2yU1pUm35nJSbSBCYCRdzZA5x8l35dk67gLbplaRYwWHSlg4oKbawcTPZJMH
+swKdhiBkPuw8ww+FaE4YgQLVLnhmY3TOywpZsIMEaF1pZCep8QZ5iYyIJtE+524ve3Nzo/QYzw5S
+YQErfiFPPciIw08r/vVTebi9L8Vn65AWvdWhzEAPlbB2TpcnkuHc2614lWBgDZH2uXpE/s2YOd+M
+Lgc2Ay6KbK5QFSrKg7D4p9tE9XA7xFe6nEAprFPr5GGrjNSK2j1L7hwjyffKQj834wIwz5f3N/O6
+amqMmUMlLJTTUO2CsNY7jReCGikBRGE4j510kzzyOjDfx/u3N/cqF9KSHxUZUVrAsCp8CA+mkC9D
+ZEn1F1x8fyGvqsA9dBKiVw8788eUwgoYL0j14Shib6fyOBAI1d9K3HPBfflsuWExcYpO9aE4VMLC
+vMj8FzNRWaBK3wjic8MFEdg6RW4ZBRMM3xVbKJx6qt3K/f8IiRfnkFS7lUjDOIFSWAC2J+pmMr7y
+ZOgFWAHrg8w6NeZGcKiEBZxOi9+a2xHndGYgopZ9jngIv1hsoXhPVB8rF99fxPvrQktYCPGnfF7f
+aqBvQJLyx3GIk4I4JxxKYcEio1KT6hcP4ffAiTYDftquGXpWS4c4Ez27JZJX1KkSBQdFWMjiqs4P
+zURfWcofk4WvC1Fjr5dDKSwA5cVOtmo7Ygu0y9bDyqf+UX4MpEuUb6PeSuDUWnkgITgoWyEAh5C6
+IUX0VQGZ5Y1GeKtz4m+myt8bamEBqOFXVbbKiCqOiy/L5wzpC1SpWsc64fbHqwecfAEEFzo+9KU9
+6ndqhrawgJmGE0rd1Ez00QVW4rpR5TyCoq5l5YzbPeyM4vzsvRAWgDr+RUakpfOSBJEzQsGjvyD2
+zNIOBxf4lGVNVk42XJOTqQ3hK8Ti/PYm27IhLHydhK8VjoSFYwhZZSHaTvzbvsLUDt6MNrZiZIlt
+LRH+jprz2qIu5Zc13ithAQj1kc3GiYWs7BqCWvJAIbfsqFFzAuT4qnKCbNfMGmlyGkRu6uBCP6st
+NoQryXFia4TfZb0ePsORpbVa386ywpGwrh1tldb5TBqRzWuo4kW9EQGhLGX3rGpeT42DWvwbfx+A
+8Rlh6ew4MIGKfiAF1EBRfQV10eLv5dUJ+1Jq+KJIG13O9iTXsP+sbVAeHusCpxSoI4PYdyRV8a3y
+pYRKI9LzsYLzzr/2hUjx7f0tvEYNz47PEC8cCQv/Qx4lKEHknK7nfMnF8IG2sFDtILNWSP2jnseF
+C0BPWMYOoDr8xdGCCxcCWsLqaFGfJ1nLfF38f0NLWHDaKTEJIl0Q7/9D4GJ4QktYstJjcN0oZ1lZ
+F8MfSmFlpQdIMQmizKUOeRIXLgbA2H8BMl2Nidn81CgAAAAASUVORK5CYII=
+				</image>
+				/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']
+			</item>
+			<item
+			name="StrongTagSignInTo"
+			id="90e5f1d3-4d0c-4b2d-9319-b7b453e48328"
+			searchtimeout="30000ms"
+			capname="strongtag"
+			refpath="/dom[@domain='login.yahoo.com']/body/div[2]/div[1]/div[1]/div[2]/strong[@innertext='                    Sign in to Yahoo Mail                ']"
+			addcaps="unknown,webelement,strongtag"
+			refimgid="21c005b3-739f-4390-9d4b-9de92e71274e">
+				/dom[@domain='login.yahoo.com']/body/div[2]/div[1]/div[1]/div[2]/strong[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Sign']
+			</item>
+			<item
+			name="LoginUsername"
+			id="c78be513-d70e-4888-826f-716e51553909"
+			searchtimeout="30000ms"
+			capname="inputtag"
+			refpath="/dom[@domain='login.yahoo.com']//input[#'login-username']"
+			addcaps="unknown,webelement,inputtag"
+			refimgid="425a429c-7772-4bc5-bb66-ed929018b373">
+				/dom[@domain='login.yahoo.com']//input[#'login-username']
+			</item>
+			<item
+			name="LoginSignin"
+			id="da30ae23-2ca2-4b00-bfb7-3d481b4d75d3"
+			searchtimeout="30000ms"
+			capname="inputtag"
+			refpath="/dom[@domain='login.yahoo.com']//input[#'login-signin']"
+			addcaps="unknown,webelement,inputtag"
+			refimgid="ffbe7913-e46b-4ee6-87df-853b656561cf">
+				<image
+				name="Screenshot1"
+				guid="8e311376-70e0-4c1d-b25a-83ed68191a2f">
+					iVBORw0KGgoAAAANSUhEUgAAAWgAAAA0CAYAAACn3qLtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAABWNJREFUeF7t3c9rHGUcx/H9M3LMSbyLFz1asBcR9B/IJRcvHrwJXsSb
+B8GCFYtgQUFrtVD8Ee2lVqQlUFGa+INoCTG1aYMxiZFI0vL1+ezMM3lm97uTzWZnZ7TvL7wI2Xnm
+2RzCZx++88xsxyiKoqhW1lgDeusfs89/MXv1qtkzH5o98a7Zo2+bPfRGZuo1APjvU54p25RxMxez
+zFP2KQPHWccOaP1Bb32b/aGEMIAHnRanCuxxhPXIAb1w1+yly4QyAAzy/BdmK1t5aI5QRw5ofSoQ
+zAAwvFGD+kgB/f4iwQwAo1I7+Cg1VEBr1axPAO8NAQDDU4962Do0oLUs14TeGwEAjk6bKoZpeVQG
+tC4EaiuJ9wYAgNGpXayMraqBAa10J5wBoD6HhbQb0Oo509YAgPppITyo3IDWnTHeRACA8Rt04bAv
+oLUNxJsAAFAfbwteKaDVd2afMwBMnrK3d2dHKaB1h6B3IgCgfmovp1UENKtnAGheuoouApo7BQGg
+ecriWN2A1rY6Vs8A0A5xFd0NaHZuAEB7xB0d3YDmphQAaA91NFQdtTe8AUCdbmT/f2b3zeY+8cdI
+HLf2q38c+L9Sm6Oj79HyDgJ1KgI61P5fZrOnqsdNOqCnz5idvGD23Af+caBuanN06D+jCWlAq26H
+AJ6uGDfRgL4Y3i9/3xvzznFgAvS9hh2216EJvQGtuuS0OghoPKh000qHByOhCTF4F28ehKHt9Lc6
+qgL6xFdmC9tmu/ezMXt7ZsurZs8mc0xfMtvIDtvOrfIq/fHvzfZ1IJx/9p3sNe+DI9bryblA3XSh
+sMMODjQhBqFWqLMhfLtBGWotBHYaooMC+sWVg3N6q7enPRvmjDV/JX89BPJiPsFSCOo4loBGW3QD
+mofyowlpQE+FMJ0LoRorbXV4Af3Ite5iu1s/L5g9djp7/amvzW7nq+nVnw7Gl+bfNXsh/P7mevbr
+/h9hJR3HRbQ40BIENBpRCujw+3QI5RiuaavDC+izIVRVu7/3X1h8+VZ2zDbNnkxeT+ff2M4DPmlt
+lBDQaAkCGo3oDWhJWx0bK1n4egH9XQzyqgoJPJOP9+ZXpa2NEgIaLdHRt8t6B4A6eQHd2+q4cskP
+6PhaZTkBPXXObDU/bPfMznirZyGg0RJcJEQj3ICWEI5Fq2P3YAeGt4Jev5mcN4Tzm9l5sXbuOP1n
+IaDRAupudHhIP5owMKCDmaX+HRpeD9pdJQ/w9I/5nHtm7/3Qzf5uLV53xhPQaAEtnju6W8U7CNSp
+KqDl06TVoUoDOt3FsfOn2SvhH7m4WHja7ORnZhfSec+ZLeer7hjIRch7FwqTgF5bNntYr50KP/ML
+l8AkaPHMszjQiMMCutTqCJUGtMyGVXZYDA+uOwdjY2tjdz1paYRQXsrn79tqF4J43pl8LvxNxRig
+ZspmnmaHRhwa0EHa6ugNaDnxpdnlEK5baT/kntnm32ZX83mL1oazUi7uJAy1HMalx6bPm13fTj4E
+wrwffVweA9Sp+zQ7/e+x1Q4A2kO761R8owoAtIyuDaqK7yT0BgEAJq/0nYQqHjsKAM3TE0ZjFQGt
+xPYGAwAm55vf8lAOVQS0ilU0ADQnXT2rSgFNLxoAmqHnPy/czcM4r1JAq7hxBQAmL+7cSKsvoFV8
+DRYATI6eu6EORm+5Aa2BPIYUAOqnGwW9cFa5Aa3Srg71RLwJAQDH5/Wd0xoY0CqdSEgDwPgpW3XN
+r6oqA1qllTTtDgAYH2VqvFuwqg4NaJX6I1w4BIDjG3RB0KuhAjoWD1UCgNGopaEMHTacVUcKaJX6
+0txxCADD06q56mLgoDpyQMciqAGg2qjBnJXZv/VBj9etQqLVAAAAAElFTkSuQmCC
+				</image>
+				/dom[@domain='login.yahoo.com']//input[#'login-signin']
+			</item>
+			<item
+			name="LoginPasswd"
+			id="4ca9b548-1d56-4767-9b8f-028c1e7bf7c1"
+			searchtimeout="30000ms"
+			capname="inputtag"
+			refpath="/dom[@domain='login.yahoo.com']//input[#'login-passwd']"
+			addcaps="unknown,webelement,inputtag"
+			refimgid="8f45a46b-fba8-43fe-9b03-bdf637d256e3">
+				/dom[@domain='login.yahoo.com']//input[#'login-passwd']
+			</item>
+			<item
+			name="LoginSignin1"
+			id="e69b68b6-1534-4905-9384-0a73131c2fd3"
+			searchtimeout="30000ms"
+			capname="buttontag"
+			refpath="/dom[@domain='login.yahoo.com']//button[#'login-signin']"
+			addcaps="unknown,webelement,buttontag"
+			refimgid="f0cceb81-78bb-4b6f-9fc7-b74707c603db">
+				/dom[@domain='login.yahoo.com']//button[#'login-signin']
+			</item>
+			<item
+			name="LooksGood"
+			id="66cac81a-eab1-4251-bae1-b5f728b3ecf4"
+			searchtimeout="30000ms"
+			capname="buttontag"
+			refpath="/dom[@domain='login.yahoo.com']//div[#'login-body']/div[2]/div[1]/div[4]/form/div[2]/button[@innertext='Looks good']"
+			addcaps="unknown,webelement,buttontag"
+			refimgid="e92343eb-34dc-4323-bf9b-feb885427218">
+				/dom[@domain='login.yahoo.com']//div[#'login-body']//form[@action='/account/comm-channel/refresh?display=login&amp;.intl=gb&amp;intl=gb&amp;.lang=en-GB&amp;src=ym&amp;done=https%3A%2F%2Fguce.yahoo.com%2Fconsent%3Fgcrumb%3DD93K-xg%26trapType%3Dlogin%26done%3Dhttps%253A%252F%252Fmail.yahoo.com%252Fd%26src%3Dym&amp;scrumb=VxRMdbJNZ42']/div[2]/button[@innertext='Looks&#160;good']
+			</item>
+			<basepath>
+				/dom[@domain='login.yahoo.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="YahooMail"
+		id="ead32e73-8d7a-44f2-a791-3bc5fe8ae9e4"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@domain='mail.yahoo.com']"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="Continue"
+			id="bacb0b6b-6432-4c54-a27f-3b9266f21c38"
+			searchtimeout="30000ms"
+			capname="spantag"
+			refpath="/dom[@domain='mail.yahoo.com']//td[#'dt-content']/div/div/ul/li[4]/a/span[@innertext='Continue']"
+			addcaps="unknown,webelement,spantag"
+			refimgid="c3b3def7-8121-421a-a034-8fa9a1452b69">
+				/dom[@domain='mail.yahoo.com']//td[#'dt-content']//ul/?/?/a[@href~'^https://mail\.yahoo\.com/b/']/span[@innertext='Continue']
+			</item>
+			<item
+			name="LetsGo"
+			id="3bc10033-6995-4985-bcdb-121ff9856ee5"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/div/div/div[3]/a[@innertext='Let''s go!']"
+			addcaps="unknown,webelement,atag"
+			refimgid="0a64a90f-3e87-41f1-872a-b1f59ef16343">
+				/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/div//a[@innertext='Let''s go!']
+			</item>
+			<item
+			name="SignOut"
+			id="7bbdef37-b9ce-4200-8e8d-a92408ec9260"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/table[1]/tbody/tr[1]/td[3]/form[@name='form']/a[@innertext='Sign Out']"
+			addcaps="unknown,webelement,atag"
+			refimgid="81a440e1-7b22-4fcc-8188-1907b5218a71">
+				/dom[@domain='mail.yahoo.com']//div[#'app']/div[1]/table[1]/tbody/tr[1]/td[3]/form[@name='form']/a[@innertext='Sign Out']
+			</item>
+			<basepath>
+				/dom[@domain='mail.yahoo.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="YahooUKNewsEmailAndSearchInte"
+		id="471d34d2-0e13-4351-8740-590f8401d9b9"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Yahoo UK | News, email and search - Internet Explorer']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ClientCaption"
+			id="b14e0fb6-6826-4ef6-8e48-bfc813f2fdb5"
+			searchtimeout="30000ms"
+			capname="unknown"
+			refpath="/form[@title~'^Yahoo\ UK\ \|\ News,\ email\ an']/element[@class='Client Caption']"
+			addcaps="unknown,nativewindow"
+			refimgid="796ef735-31da-474a-bbf2-72b507fbe6e3">
+				/form[@title~'^Yahoo\ UK\ \|\ News,\ email\ an']/element[@class='Client Caption']
+			</item>
+			<basepath>
+				/form[@title~'^Yahoo\ UK\ \|\ News,\ email\ an']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath/>
 	</rootfolder>
 	<variables/>

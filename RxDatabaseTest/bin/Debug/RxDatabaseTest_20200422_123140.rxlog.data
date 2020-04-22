@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="268ed9d703ddb440"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		user="kirushakthy"
+		host="LAPTOP-I3SMJTM7"
+		rxversion="6.1.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="22/04/2020 12:31:40"
+		timestampiso="2020-04-22T11:31:40"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="1m"
+			durationms="61977"
+			type="test suite"
+			rid="b2c5723c8543b9c"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			testsuitename="RxDatabaseTest"
+			runconfigname="TestRun2"
+			runlabel=""
+			maxchildren="2">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="1m"
+				durationms="61943"
+				type="test case"
+				rid="7873ab06c203960"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="TestCase2"
+				testcaseid="af2e6508-1e76-4266-aa13-59373edbedfb"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="1m"
+					durationms="61903"
+					type="test module"
+					rid="dccd6a926fdef50"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="YahooMail"
+					moduleid="2f8b24b0-f8e4-464e-b897-e8b3f8e242b3"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Attribute 'Src' of element for item 'RxDatabaseTestRepository.YahooLogin.Yahoo' does not match the specified value (Failed to find item 'RxDatabaseTestRepository.YahooLogin.Yahoo'. No element found for path '/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']' within 1m.).
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.314"
+						timeRelativeToTestModuleStartTime="00:00.012"
+						timeWallClock="12:31:40"
+						time="00:00.314"
+						level="Info"
+						category="Website">
+						<message>
+							Opening web site 'mail.yahoo.com' with browser 'IE' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.997"
+						timeRelativeToTestModuleStartTime="00:00.696"
+						timeWallClock="12:31:41"
+						time="00:00.997"
+						level="Info"
+						category="Validation"
+						errimg="images_RxDataba_f59a8db1\RxDataba_f59a8db1_886f81df_trace.jpg"
+						errthumb="images_RxDataba_f59a8db1\RxDataba_f59a8db1_886f81df_trace_thumb.jpg">
+						<message>
+							Validating AttributeEqual (Src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png') on item 'YahooLogin.Yahoo'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="01:01.884"
+						timeRelativeToTestModuleStartTime="01:01.583"
+						timeWallClock="12:32:42"
+						time="01:01.884"
+						level="Failure"
+						category="Validation"
+						errimg="images_RxDataba_f59a8db1\RxDataba_f59a8db1_76b005a1_trace.jpg"
+						errthumb="images_RxDataba_f59a8db1\RxDataba_f59a8db1_76b005a1_trace_thumb.jpg">
+						<message>
+							Attribute 'Src' of element for item 'RxDatabaseTestRepository.YahooLogin.Yahoo' does not match the specified value (Failed to find item 'RxDatabaseTestRepository.YahooLogin.Yahoo'. No element found for path '/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']' within 1m.).
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							timeout="60000"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="87"
+							loglvl="Failure"
+							itemindex="1"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="01:01.948"
+						timeRelativeToTestModuleStartTime="01:01.647"
+						timeWallClock="12:32:42"
+						time="01:01.948"
+						level="Error"
+						category="Module"
+						errimg="images_RxDataba_f59a8db1\RxDataba_f59a8db1_ceb9507d_trace.jpg"
+						errthumb="images_RxDataba_f59a8db1\RxDataba_f59a8db1_ceb9507d_trace_thumb.jpg">
+						<message>
+							Module execution was aborted because a validation step has failed. Attribute 'Src' of element for item 'RxDatabaseTestRepository.YahooLogin.Yahoo' does not match the specified value (Failed to find item 'RxDatabaseTestRepository.YahooLogin.Yahoo'. No element found for path '/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']' within 1m.).
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Object value)
+   at RxDatabaseTest.YahooMail.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs:line 87
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Users\kirushakthy\Documents\Ranorex\RanorexStudio Projects\RxDatabaseTest\RxDatabaseTest\YahooMail.cs"
+							codeline="87"
+							type="repoitem"
+							path="/dom[@domain='login.yahoo.com']/body/div[1]/?/?/a[@title='Yahoo']/img[@src='https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png']"
+							fullname="RxDatabaseTestRepository.YahooLogin.Yahoo"
+							id="11281bbbc6db401286786a5a3b23bd28"
+							timeout="60000"
+							loglvl="Error"
+							itemindex="1"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>
