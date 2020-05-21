@@ -519,7 +519,7 @@ UAf/2Q==
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		duration="100ms"
 		screenshotname="Screenshot1"
@@ -5753,7 +5753,7 @@ FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 		optional="False"
 		duration="500ms"
 		searchpropertyid="d74bd0f6-ff4f-4994-a34c-36df0ebfd249"
-		action="Click"
+		action="DoubleClick"
 		button="Left"
 		movetime="300ms"
 		sx="1382"

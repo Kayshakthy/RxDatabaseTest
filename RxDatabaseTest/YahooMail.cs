@@ -87,9 +87,9 @@ namespace RxDatabaseTest
             Validate.Attribute(repo.YahooLogin.YahooInfo, "Src", "https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=150,Height=45}) on item 'YahooLogin.Yahoo'.", repo.YahooLogin.YahooInfo, new RecordItemIndex(2));
-            Validate.ContainsImage(repo.YahooLogin.YahooInfo, Yahoo_Screenshot1, Yahoo_Screenshot1_Options);
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=150,Height=45}) on item 'YahooLogin.Yahoo'.", repo.YahooLogin.YahooInfo, new RecordItemIndex(2));
+            //Validate.ContainsImage(repo.YahooLogin.YahooInfo, Yahoo_Screenshot1, Yahoo_Screenshot1_Options);
+            //Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(3));
             
@@ -130,8 +130,8 @@ namespace RxDatabaseTest
             Validate.ContainsImage(repo.YahooLogin.LoginSigninInfo, LoginSignin_Screenshot1, LoginSignin_Screenshot1_Options);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'YahooLogin.LoginSignin' at 194;23.", repo.YahooLogin.LoginSigninInfo, new RecordItemIndex(13));
-            repo.YahooLogin.LoginSignin.Click("194;23");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'YahooLogin.LoginSignin' at 194;23.", repo.YahooLogin.LoginSigninInfo, new RecordItemIndex(13));
+            repo.YahooLogin.LoginSignin.DoubleClick("194;23");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'YahooLogin.LoginPasswd' at 107;32.", repo.YahooLogin.LoginPasswdInfo, new RecordItemIndex(14));

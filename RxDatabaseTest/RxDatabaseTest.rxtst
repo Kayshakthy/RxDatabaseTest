@@ -63,7 +63,7 @@ rxversion="6.1">
 	</testsuiteentryhierarchy>
 	<datasources/>
 	<testconfigurations
-	default="TestRun2">
+	default="TestRun">
 		<testconfiguration
 		name="TestRun">
 			<testcase
@@ -81,12 +81,7 @@ rxversion="6.1">
 			id="af2e6508-1e76-4266-aa13-59373edbedfb"/>
 		</testconfiguration>
 		<testconfiguration
-		name="TestRun2">
-			<testcase
-			id="a050d07d-2877-48a5-8ee6-70aa4ba65214"/>
-			<testcase
-			id="af2e6508-1e76-4266-aa13-59373edbedfb"/>
-		</testconfiguration>
+		name="TestRun2"/>
 	</testconfigurations>
 	<references/>
 </testsuitedoc>

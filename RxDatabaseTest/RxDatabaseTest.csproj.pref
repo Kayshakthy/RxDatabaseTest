@@ -1,9 +1,13 @@
 ﻿<Properties>
+  <Array name="active">
+    <Element value="YahooMail.rxrec" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="ValidatePage.UserCode.cs" />
     <Element value="RxDatabaseTest.rxtst" />
-    <Element value="ValidatePage.rxrec" />
+    <Element value="YahooMail.rxrec" />
+    <Element value="YahooMail.UserCode.cs" />
+    <Element value="ValidatePage.UserCode.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
